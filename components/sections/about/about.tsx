@@ -1,106 +1,35 @@
 import { ReactElement } from 'react';
-import { Box } from '@mui/material';
-import Image from 'next/image';
 
-import { DeviceType, useWindowSize } from '../../../hooks/use-window-resize';
-import ProfilePhoto from '../../../public/assets/seolhikim.png';
-import { Typography, Button } from 'sk-storybook';
-import { Span } from '../../common/span.styles';
+import { Typography } from 'sk-storybook';
 import * as S from './about.styles';
 
-interface ImageSize {
-  width: number;
-  height: number;
-}
-
 export const About = (): ReactElement => {
-  const { deviceType } = useWindowSize();
-
-  const isMobile = deviceType === DeviceType.MOBILE;
-  const isTablet = deviceType === DeviceType.TABLET;
-  const isLaptop = deviceType === DeviceType.LAPTOP;
-
-  const marginButtom = isMobile || isTablet ? '8rem' : '0';
-
-  let imageSize: ImageSize;
-
-  if (isMobile) {
-    imageSize = {
-      width: 330,
-      height: 400,
-    };
-  }
-  if (isTablet) {
-    imageSize = {
-      width: 300,
-      height: 450,
-    };
-  }
-  if (isLaptop) {
-    imageSize = {
-      width: 310,
-      height: 380,
-    };
-  } else {
-    imageSize = {
-      width: 330,
-      height: 400,
-    };
-  }
-
   return (
     <S.Container>
-      <Image
-        src={ProfilePhoto}
-        alt='Seol Hi portfolio image'
-        width={imageSize.width}
-        height={imageSize.height}
-        style={{
-          borderRadius: '1.5rem',
-          marginBottom: marginButtom,
-        }}
-      />
+      <Typography variant='headingM' fontWeight='bold'>
+        About me
+      </Typography>
       <S.TextContainer>
-        <Typography
-          variant='textM'
-          margin={['none', 'none', 'lg', 'none']}
-          fontWeight='bold'
-        >
-          Hello! I'm
-        </Typography>
-        <Typography
-          variant='headingM'
-          margin={['none', 'none', 'lg', 'none']}
-          fontWeight='bold'
-        >
-          Seol Hi Kim
-        </Typography>
-        <Typography variant='headingXS'>
-          Frontend Developer ready to take over the world,
-          <br /> one line of code at the time!
-        </Typography>
-        <Typography variant='textL' margin={['lg', 'none', 'none', 'none']}>
-          I approach every project with
-          <Span $fontWeight={700}> keen interest</Span> to processes and best
-          practices. My focus is delivering
-          <Span $fontWeight={700}> excellent solutions</Span> on time, according
-          to the project priorities. Once a project is done, my mind is always
-          looking for ways to <Span $fontWeight={700}> improve myself</Span> and
-          <Span $fontWeight={700}> next projects</Span>.
-        </Typography>
-
-        {/* TODO: Add resume link, change button style */}
-        <Box width={'15rem'} marginTop='3rem'>
-          <Button
-            textColor='white'
-            size='m'
-            ariaLabel='Resume button'
-            bgColor='black'
-            fullWidth
-          >
-            Resume
-          </Button>
-        </Box>
+        <S.Pharagraph>
+          <Typography variant='textL'>
+            Throughout my professional career, I have consistently demonstrated
+            my capabilities. My work is a testament to my commitment to
+            excellence, innovation, and user-friendly design, highlighting my
+            ability to simplify complex problems into intuitive, accessible
+            solutions.
+          </Typography>
+        </S.Pharagraph>
+        <S.Pharagraph>
+          <Typography variant='textL'>
+            Beyond my professional achievements, I am a firm believer in
+            continuous learning and personal growth. With a goal to work
+            anywhere with internet connectivity, I am more than just a software
+            developer; I am a global tech enthusiast, poised to make a mark on
+            the world, one line of code at a time. My portfolio is a window into
+            my world of coding, creativity, and my aspiration to create a global
+            impact in the tech industry.
+          </Typography>
+        </S.Pharagraph>
       </S.TextContainer>
     </S.Container>
   );
