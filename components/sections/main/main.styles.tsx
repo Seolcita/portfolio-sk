@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { Wrap } from '../../common/flex.styles';
+import { Center } from '../../common/flex.styles';
 
-export const Container = styled(Wrap)`
+export const Container = styled(Center)`
   flex-direction: column;
-  background-color: red;
+  background-color: black;
 `;

@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-import { Center } from '../../common/flex.styles';
+import { Center, Wrap } from '../../common/flex.styles';
 import { device } from '../../../styles/Breakpoints';
 
 export const Container = styled(Center)`
-  flex-direction: column;
-
   @media ${device.xs} {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 59rem;
@@ -14,6 +13,7 @@ export const Container = styled(Center)`
   }
 
   @media ${device.sm} {
+    flex-direction: column;
     align-items: start;
     justify-content: center;
     max-width: 96rem;
@@ -21,6 +21,7 @@ export const Container = styled(Center)`
   }
 
   @media ${device.md} {
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     max-width: 150rem;
@@ -34,14 +35,11 @@ export const Container = styled(Center)`
 `;
 
 export const TextContainer = styled.div`
-  flex-direction: column;
   display: flex;
-  gap: 3rem;
-  margin-top: 4rem;
-`;
+  flex-direction: column;
+  align-items: space-between;
 
-export const Pharagraph = styled.div`
   @media ${device.md} {
-    width: 100%;
+    padding-left: 6rem;
   }
 `;
