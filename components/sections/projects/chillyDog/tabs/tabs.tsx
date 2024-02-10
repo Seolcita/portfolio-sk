@@ -5,6 +5,7 @@ import { PlanningChillyDog } from '../tab-panels/planning/planning';
 import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
 import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
 import { AboutChillyDog } from '../tab-panels/about/about';
+import { SprintsChillyDog } from '../tab-panels/sprints/sprints';
 
 export const ChillyDogTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -35,6 +36,9 @@ export const ChillyDogTabs = (): ReactElement => {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <PlanningChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <SprintsChillyDog />
       </TabPanel>
     </Box>
   );
