@@ -24,7 +24,7 @@ export const Container = styled(Center)`
     align-items: center;
     justify-content: center;
     max-width: 150rem;
-    width: 75%;
+    width: 70%;
     padding: 10rem 0;
   }
 

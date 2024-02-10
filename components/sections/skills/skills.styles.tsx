@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-import { Center } from '../../common/flex.styles';
 import { device } from '../../../styles/Breakpoints';
+import { Center } from '../../common/flex.styles';
 
 export const Container = styled(Center)`
+  background-color: pink;
+  flex-direction: column;
+
   @media ${device.xs} {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 59rem;
@@ -13,7 +15,6 @@ export const Container = styled(Center)`
   }
 
   @media ${device.sm} {
-    flex-direction: column;
     align-items: start;
     justify-content: center;
     max-width: 96rem;
@@ -21,7 +22,6 @@ export const Container = styled(Center)`
   }
 
   @media ${device.md} {
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     max-width: 150rem;
@@ -34,12 +34,12 @@ export const Container = styled(Center)`
   }
 `;
 
-export const TextContainer = styled.div`
+export const MainSkillsContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: space-between;
-
-  @media ${device.md} {
-    padding-left: 6rem;
-  }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  gap: 4rem;
 `;
