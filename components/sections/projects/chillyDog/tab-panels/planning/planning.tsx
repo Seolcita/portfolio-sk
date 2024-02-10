@@ -188,7 +188,7 @@ export const PlanningChillyDog = (): ReactElement => {
               Sprint 1
             </Typography>
             <Typography variant='textM'>
-              Frontend (layout + components)
+              Frontend (setup + components)
             </Typography>
           </S.Li>
           <S.Li>
