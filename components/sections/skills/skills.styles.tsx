@@ -4,7 +4,6 @@ import { device } from '../../../styles/Breakpoints';
 import { Center } from '../../common/flex.styles';
 
 export const Container = styled(Center)`
-  background-color: pink;
   flex-direction: column;
 
   @media ${device.xs} {
