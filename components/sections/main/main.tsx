@@ -5,7 +5,7 @@ import { ReactElement } from 'react';
 // import { Hero } from '../hero/hero';
 import { About } from '../about/about';
 import { Intorduction } from '../introduction/introduction';
-// import { MainSkills } from '../skills/main-skills';
+import { MainSkills } from '../skills/skills';
 // import { InProgressSkills } from '../skills/in-progress-skills';
 // import { Experience } from '../experience/experience';
 // import { Projects } from '../projects/projects';
@@ -18,8 +18,8 @@ export const Main = (): ReactElement => {
     <S.Container>
       <Intorduction />
       <About />
-      {/* <Hero />
       <MainSkills />
+      {/* <Hero />
       <InProgressSkills />
       <Experience />
       <Projects />

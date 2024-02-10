@@ -24,15 +24,10 @@ export const Intorduction = (): ReactElement => {
 
   let imageSize: ImageSize;
 
-  if (isMobile) {
+  if (isMobile || isTablet) {
     imageSize = {
       width: 300,
       height: 370,
-    };
-  } else if (isTablet) {
-    imageSize = {
-      width: 300,
-      height: 450,
     };
   } else if (isLaptop) {
     imageSize = {
