@@ -1,9 +1,9 @@
 import { ReactElement, SyntheticEvent, useState } from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
 
-import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
+import { PlanningChillyDog } from '../tab-panels/planning/planning';
 import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
-import { About } from '../../../about/about';
+import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
 import { AboutChillyDog } from '../tab-panels/about/about';
 
 export const ChillyDogTabs = (): ReactElement => {
@@ -32,6 +32,9 @@ export const ChillyDogTabs = (): ReactElement => {
       </Box>
       <TabPanel value={value} index={0}>
         <AboutChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <PlanningChillyDog />
       </TabPanel>
     </Box>
   );
