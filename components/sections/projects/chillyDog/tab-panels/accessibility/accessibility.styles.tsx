@@ -21,13 +21,6 @@ export const VideoContainer = styled(Center)`
   flex-direction: column;
 `;
 
-export const IFrameContainer = styled.div`
-  position: relative;
-  width: 100%;
-  height: 0px;
-  padding-bottom: 55.156%;
-`;
-
 export const IFrame = styled.iframe`
   overflow: hidden;
   border: none;
