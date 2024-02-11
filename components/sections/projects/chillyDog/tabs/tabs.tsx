@@ -8,6 +8,7 @@ import { AboutChillyDog } from '../tab-panels/about/about';
 import { SprintsChillyDog } from '../tab-panels/sprints/sprints';
 import { FlowChillyDog } from '../tab-panels/flows/flows';
 import { UseCaseChillyDog } from '../tab-panels/usecase/usecase';
+import { AccessibilityChillyDog } from '../tab-panels/accessibility/accessibility';
 
 export const ChillyDogTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -47,6 +48,9 @@ export const ChillyDogTabs = (): ReactElement => {
       </TabPanel>
       <TabPanel value={value} index={5}>
         <FlowChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={6}>
+        <AccessibilityChillyDog />
       </TabPanel>
     </Box>
   );
