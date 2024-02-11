@@ -9,6 +9,7 @@ import { SprintsChillyDog } from '../tab-panels/sprints/sprints';
 import { FlowChillyDog } from '../tab-panels/flows/flows';
 import { UseCaseChillyDog } from '../tab-panels/usecase/usecase';
 import { AccessibilityChillyDog } from '../tab-panels/accessibility/accessibility';
+import { StackChillyDog } from '../tab-panels/stack/stack';
 
 export const ChillyDogTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -36,6 +37,9 @@ export const ChillyDogTabs = (): ReactElement => {
       </Box>
       <TabPanel value={value} index={0}>
         <AboutChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <StackChillyDog />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <PlanningChillyDog />
