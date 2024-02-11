@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
+import Image from 'next/image';
 
 import * as S from './usecase.styles';
-import Image from 'next/image';
 
 export const UseCaseChillyDog = (): ReactElement => {
   return (

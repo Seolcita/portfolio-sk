@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
-
 import Image from 'next/image';
+
 import * as S from './flows.styles';
 
 export const FlowChillyDog = (): ReactElement => {
