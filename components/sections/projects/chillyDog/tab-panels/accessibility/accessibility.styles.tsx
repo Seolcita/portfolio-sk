@@ -20,3 +20,8 @@ export const LogoText = styled.span`
 export const VideoContainer = styled(Center)`
   flex-direction: column;
 `;
+
+export const IFrame = styled.iframe`
+  overflow: hidden;
+  border: none;
+`;

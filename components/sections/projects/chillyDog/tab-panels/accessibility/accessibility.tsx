@@ -36,31 +36,12 @@ export const AccessibilityChillyDog = (): ReactElement => {
           >
             Main Page
           </Typography>
-          <iframe
+          <S.IFrame
+            allow='fullscreen'
+            src='https://streamable.com/e/i3z8h0?loop=0'
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/I17P2c4ZJL8?si=hdU8WEkyO4UNb7Mt'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
-        </S.VideoContainer>
-
-        {/* Create First Dog Profile */}
-        <S.VideoContainer>
-          <Typography
-            variant='headingXS'
-            fontWeight='bold'
-            margin={['xl', 'none', 'lg']}
-          >
-            Creating Dog Profile
-          </Typography>
-          <iframe
-            width={isMobile ? '360' : '560'}
-            height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/2_-2dp9HnBY?si=afiMyRT4rX-xNHF9'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+          ></S.IFrame>
         </S.VideoContainer>
 
         {/* Alert */}
@@ -72,51 +53,27 @@ export const AccessibilityChillyDog = (): ReactElement => {
           >
             Alert
           </Typography>
-          <iframe
+          <S.IFrame
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/cqOxSId0HJQ?si=FYlO2hB-Tu6xaOjY'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+            src='https://streamable.com/e/7tm6rm?loop=0'
+          ></S.IFrame>
         </S.VideoContainer>
 
-        {/* Toast Message */}
+        {/* Create First Dog Profile */}
         <S.VideoContainer>
           <Typography
             variant='headingXS'
             fontWeight='bold'
             margin={['xl', 'none', 'lg']}
           >
-            Toast Message
+            Creating Dog Profile
           </Typography>
-
-          <iframe
+          <S.IFrame
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/gJTAGHjtHcA?si=Ab4UitTRxBHXZ66u'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
-        </S.VideoContainer>
-
-        {/* User Profile */}
-        <S.VideoContainer>
-          <Typography
-            variant='headingXS'
-            fontWeight='bold'
-            margin={['xl', 'none', 'lg']}
-          >
-            User Profile
-          </Typography>
-
-          <iframe
-            width={isMobile ? '360' : '560'}
-            height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/BwTI423AH9g?si=Q9BuZB3Pb15nFJPz'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+            src='https://streamable.com/e/6sbtpr?loop=0'
+          ></S.IFrame>
         </S.VideoContainer>
 
         {/* Dog Profile */}
@@ -129,13 +86,45 @@ export const AccessibilityChillyDog = (): ReactElement => {
             Dog Profile
           </Typography>
 
-          <iframe
+          <S.IFrame
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/biKcidM-Pxs?si=dcm286HW0X1ZYFbk'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+            src='https://streamable.com/e/zam4cd?loop=0'
+          ></S.IFrame>
+        </S.VideoContainer>
+
+        {/* User Profile */}
+        <S.VideoContainer>
+          <Typography
+            variant='headingXS'
+            fontWeight='bold'
+            margin={['xl', 'none', 'none']}
+          >
+            User Profile
+          </Typography>
+
+          <S.IFrame
+            width={isMobile ? '360' : '560'}
+            height={isMobile ? '200' : '315'}
+            src='https://streamable.com/e/6rys5l?loop=0'
+          ></S.IFrame>
+        </S.VideoContainer>
+
+        {/* Toast Message */}
+        <S.VideoContainer>
+          <Typography
+            variant='headingXS'
+            fontWeight='bold'
+            margin={['xl', 'none', 'none']}
+          >
+            Toast Message
+          </Typography>
+
+          <S.IFrame
+            width={isMobile ? '360' : '560'}
+            height={isMobile ? '200' : '315'}
+            src='https://streamable.com/e/oep9bs?loop=0'
+          ></S.IFrame>
         </S.VideoContainer>
 
         {/* Location */}
@@ -143,18 +132,16 @@ export const AccessibilityChillyDog = (): ReactElement => {
           <Typography
             variant='headingXS'
             fontWeight='bold'
-            margin={['xl', 'none', 'lg']}
+            margin={['xl', 'none', 'none']}
           >
             Location
           </Typography>
 
-          <iframe
+          <S.IFrame
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/nGZh39gCHjk?si=Pi8kOkA2uBJgpV7v'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+            src='https://streamable.com/e/v0dkt4?loop=0'
+          ></S.IFrame>
         </S.VideoContainer>
 
         {/* Logout */}
@@ -162,18 +149,16 @@ export const AccessibilityChillyDog = (): ReactElement => {
           <Typography
             variant='headingXS'
             fontWeight='bold'
-            margin={['xl', 'none', 'lg']}
+            margin={['xl', 'none', 'none']}
           >
             Logout
           </Typography>
 
-          <iframe
+          <S.IFrame
             width={isMobile ? '360' : '560'}
             height={isMobile ? '200' : '315'}
-            src='https://www.youtube.com/embed/Seri0l0ogJU?si=TsN_R3XW3rm2WOLQ?rel=0'
-            title='YouTube video player'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          ></iframe>
+            src='https://streamable.com/e/b5oczg?loop=0'
+          ></S.IFrame>
         </S.VideoContainer>
       </S.Container>
     </>
