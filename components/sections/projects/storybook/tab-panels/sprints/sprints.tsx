@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
-import * as S from './sprints.styles';
+import * as S from '../../../chillyDog/tab-panels/sprints/sprints.styles';
 
 export const SprintsStorybook = (): ReactElement => {
   return (
