@@ -7,6 +7,12 @@ interface ContainerProps {
 
 interface FrontProps {
   $bgImageUrl: string;
+  $borderRadius?: number;
+}
+
+interface BackProps {
+  $bgImageUrl?: string;
+  $borderRadius?: number;
 }
 
 export const Base = styled.div`
@@ -14,7 +20,6 @@ export const Base = styled.div`
   height: 12rem;
   background-size: cover;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
-  border-radius: 50%;
   background-position: center;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
@@ -31,14 +36,18 @@ export const Front = styled(Base)<FrontProps>`
   background-repeat: no-repeat;
   transform: rotateY(0deg);
   border: 0.75rem solid #fff;
+  border-radius: ${({ $borderRadius }) =>
+    $borderRadius ? `${$borderRadius}rem` : '50%'};
 `;
 
-export const Back = styled(Base)<FrontProps>`
+export const Back = styled(Base)<BackProps>`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   transform: rotateY(180deg);
+  border-radius: ${({ $borderRadius }) =>
+    $borderRadius ? `${$borderRadius}rem` : '50%'};
 
   &:after {
     position: absolute;
@@ -50,9 +59,12 @@ export const Back = styled(Base)<FrontProps>`
     content: '';
     display: block;
     opacity: 0.95;
-    border-radius: 50%;
+    border-radius: ${({ $borderRadius }) =>
+      $borderRadius ? `${$borderRadius}rem` : '50%'};
     backface-visibility: hidden;
     background: linear-gradient(-45deg, #e2e4e4 0%, #116d82 100%);
+    ${({ $bgImageUrl }) =>
+      $bgImageUrl && `background-image: url(${$bgImageUrl})`}
   }
 `;
 
@@ -70,7 +82,8 @@ export const Inner = styled.div`
 `;
 
 export const Container = styled(Center)<ContainerProps>`
-  border-radius: ${({ $borderRadius }) => `${$borderRadius}rem`};
+  border-radius: ${({ $borderRadius }) =>
+    $borderRadius ? `${$borderRadius}rem` : '50%'};
   transform-style: preserve-3d;
   perspective: 1000px;
 

@@ -5,10 +5,9 @@ import { device } from '../../../../../../styles/Breakpoints';
 
 export const Container = styled(Center)`
   flex-direction: column;
-  padding: 4rem 0;
 
   @media ${device.md} {
-    padding: 0 10rem;
+    padding: 0 5rem;
   }
 
   @media ${device.lg} {
@@ -17,15 +16,14 @@ export const Container = styled(Center)`
 `;
 
 export const StackContainer = styled(Center)`
-  gap: 3rem;
+  gap: 3.5rem;
   flex-wrap: wrap;
-  padding: 6rem 0;
 
   @media ${device.xs} {
-    padding: 0;
+    padding: 2rem 0;
   }
 
   @media ${device.sm} {
-    padding: 1rem 0;
+    padding: 4rem 0;
   }
 `;

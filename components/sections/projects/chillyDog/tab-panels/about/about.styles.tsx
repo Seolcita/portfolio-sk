@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 import { Center } from '../../../../../common/flex.styles';
-import { device } from '../../../../../../styles/Breakpoints';
+
+interface ChartContainerProps {
+  $isMobile?: boolean;
+}
 
 export const Container = styled(Center)`
   flex-direction: column;
-
-  @media ${device.md} {
-    padding: 0 10rem;
-  }
-
-  @media ${device.lg} {
-    padding: 0 15rem;
-  }
 `;
 
 export const ImageContainer = styled(Center)`
-  margin: 4rem 0;
+  margin: 2rem 0;
+`;
+
+export const ChartContainer = styled(ImageContainer)<ChartContainerProps>`
+  margin-top: -0.5rem;
+  width: ${({ $isMobile }) => ($isMobile ? '100%' : '65%')};
 `;
 
 export const LogoText = styled.span`

@@ -7,11 +7,7 @@ import * as S from './flows.styles';
 export const FlowChillyDog = (): ReactElement => {
   return (
     <S.Container>
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
+      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
         Creating First Dog Profile
       </Typography>
       <S.ImageContainer>
@@ -21,16 +17,12 @@ export const FlowChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '5rem' }}
         />
       </S.ImageContainer>
 
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
-        Resume Dog Profile
+      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+        Resuming Creating Dog Profile
       </Typography>
       <S.ImageContainer>
         <Image

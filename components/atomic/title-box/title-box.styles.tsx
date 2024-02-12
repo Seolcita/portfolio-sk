@@ -2,11 +2,14 @@ import styled from 'styled-components';
 
 import { Center } from '../../common/flex.styles';
 
-export const container = styled(Center)`
+interface ContainerProps {
+  $bgColor?: string;
+}
+
+export const Container = styled(Center)<ContainerProps>`
   width: 100%;
-  height: 5rem;
-  padding: 2rem;
-  background-color: black;
+  padding: 1rem;
+  background-color: ${({ $bgColor }) => $bgColor || 'black'};
   justify-content: start;
   border-radius: 0.5rem;
 `;

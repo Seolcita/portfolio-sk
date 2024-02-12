@@ -1,17 +1,14 @@
 import { ReactElement } from 'react';
-import * as S from './sprints.styles';
 import { Typography } from 'sk-storybook';
 import Image from 'next/image';
+
+import * as S from './sprints.styles';
 
 export const SprintsChillyDog = (): ReactElement => {
   return (
     <S.Container>
       {/* Sprints */}
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
+      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
         Sprints
       </Typography>
       <S.ImageContainer>
@@ -21,25 +18,19 @@ export const SprintsChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '4rem' }}
         />
       </S.ImageContainer>
 
       {/* Sprint 1 */}
       <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
-        Sprint 1
-      </Typography>
-      <Typography
-        variant='textXL'
+        variant='headingXS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
-        Frontend (setup & components)
+        Sprint 1
       </Typography>
+      <Typography variant='textL'>Frontend (setup & components)</Typography>
       <S.ImageContainer>
         <Image
           src='/assets/chilly-dog/sprint1.png'
@@ -47,25 +38,19 @@ export const SprintsChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '4rem' }}
         />
       </S.ImageContainer>
 
       {/* Sprint 2 */}
       <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
-        Sprint 2
-      </Typography>
-      <Typography
-        variant='textXL'
+        variant='headingXS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
-        Backend (backend + hook Frontend)
+        Sprint 2
       </Typography>
+      <Typography variant='textL'>Backend (backend + hook Frontend)</Typography>
       <S.ImageContainer>
         <Image
           src='/assets/chilly-dog/sprint2.png'
@@ -73,23 +58,19 @@ export const SprintsChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '4rem' }}
         />
       </S.ImageContainer>
 
       {/* Sprint 3 */}
       <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
-        Sprint 3
-      </Typography>
-      <Typography
         variant='textXL'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
+        Sprint 3
+      </Typography>
+      <Typography variant='headingXS'>
         Improvement (fix, refactor, accessibility, UI/UX)
       </Typography>
       <S.ImageContainer>
@@ -99,16 +80,12 @@ export const SprintsChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '4rem' }}
         />
       </S.ImageContainer>
 
       {/* Maintenance  */}
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
+      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
         Maintenance
       </Typography>
       <S.ImageContainer>
@@ -118,16 +95,12 @@ export const SprintsChillyDog = (): ReactElement => {
           layout='responsive'
           width={700}
           height={250}
-          style={{ borderRadius: '0.5rem' }}
+          style={{ borderRadius: '0.5rem', marginBottom: '4rem' }}
         />
       </S.ImageContainer>
 
       {/* Bugs */}
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'none']}
-      >
+      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
         Bugs
       </Typography>
       <S.ImageContainer>

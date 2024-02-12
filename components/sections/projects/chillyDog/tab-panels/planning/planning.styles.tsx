@@ -1,18 +1,10 @@
 import styled from 'styled-components';
 
 import { Center } from '../../../../../common/flex.styles';
-import { device } from '../../../../../../styles/Breakpoints';
+import { device } from 'sk-storybook';
 
 export const Container = styled(Center)`
   flex-direction: column;
-
-  @media ${device.md} {
-    padding: 0 10rem;
-  }
-
-  @media ${device.lg} {
-    padding: 1rem 15rem;
-  }
 `;
 
 export const TopicContainer = styled(Center)`
