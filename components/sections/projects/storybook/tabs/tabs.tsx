@@ -4,6 +4,7 @@ import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
 import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
 import { AboutStorybook } from '../tab-panels/about/about';
 import { PlanningStorybook } from '../tab-panels/planning/planning';
+import { SprintsStorybook } from '../tab-panels/sprints/sprints';
 
 export const StorybookTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -42,7 +43,7 @@ export const StorybookTabs = (): ReactElement => {
         <PlanningStorybook />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        tickets
+        <SprintsStorybook />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Challenges
