@@ -9,7 +9,7 @@ export const ImprovementChillyDog = (): ReactElement => {
     <S.Container>
       <S.TopicContainer>
         <TitleBox
-          title='Optimizing Session Persistence for Dog Profile Creation'
+          title='Improving Efficiency in Dog Profile Creation'
           imgUrl='/assets/logo.svg'
         />
         <Typography variant='textM'>

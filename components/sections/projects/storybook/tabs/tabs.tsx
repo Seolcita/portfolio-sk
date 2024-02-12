@@ -1,11 +1,11 @@
 import { ReactElement, SyntheticEvent, useState } from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
 
-import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
-import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
 import { AboutStorybook } from '../tab-panels/about/about';
-import { PlanningStorybook } from '../tab-panels/planning/planning';
 import { SprintsStorybook } from '../tab-panels/sprints/sprints';
+import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
+import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
+import { PlanningStorybook } from '../tab-panels/planning/planning';
 import { ChallengesStorybook } from '../tab-panels/challenges/challenges';
 import { ImprovementStorybook } from '../tab-panels/Improvement/improvement';
 

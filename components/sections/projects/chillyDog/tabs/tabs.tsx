@@ -36,13 +36,13 @@ export const ChillyDogTabs = (): ReactElement => {
           aria-label='basic tabs example'
         >
           <Tab label='About' {...a11yProps(0)} sx={customTabStyle} />
-          <Tab label='Planning' {...a11yProps(2)} sx={customTabStyle} />
-          <Tab label='Sprints & Tasks' {...a11yProps(3)} sx={customTabStyle} />
-          <Tab label='Use Case' {...a11yProps(4)} sx={customTabStyle} />
-          <Tab label='Flow Chart' {...a11yProps(5)} sx={customTabStyle} />
-          <Tab label='Accessibility' {...a11yProps(6)} sx={customTabStyle} />
-          <Tab label='Challenges' {...a11yProps(7)} sx={customTabStyle} />
-          <Tab label='Improvement' {...a11yProps(8)} sx={customTabStyle} />
+          <Tab label='Planning' {...a11yProps(1)} sx={customTabStyle} />
+          <Tab label='Sprints & Tasks' {...a11yProps(2)} sx={customTabStyle} />
+          <Tab label='Use Case' {...a11yProps(3)} sx={customTabStyle} />
+          <Tab label='Flow Chart' {...a11yProps(4)} sx={customTabStyle} />
+          <Tab label='Accessibility' {...a11yProps(5)} sx={customTabStyle} />
+          <Tab label='Challenges' {...a11yProps(6)} sx={customTabStyle} />
+          <Tab label='Improvement' {...a11yProps(7)} sx={customTabStyle} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

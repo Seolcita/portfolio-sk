@@ -14,9 +14,9 @@ export const Projects = (): ReactElement => {
       <Typography variant='headingM' fontWeight='bold'>
         Projects
       </Typography>
-      {/* <Box width={'100%'} bgcolor={'skyblue'} marginTop={'5rem'}>
+      <Box width={'100%'} bgcolor={'skyblue'} marginTop={'5rem'}>
         <ChillyDogMain />
-      </Box> */}
+      </Box>
       <Box width={'100%'} bgcolor={'skyblue'} marginTop={'5rem'}>
         <StorybookMain />
       </Box>

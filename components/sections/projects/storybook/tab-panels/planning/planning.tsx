@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
 
-import * as S from './planning.styles';
+import * as S from '../../../chillyDog/tab-panels/planning/planning.styles';
 import { TitleBox } from '../../../../../atomic/title-box/title-box';
 
 export const PlanningStorybook = (): ReactElement => {
