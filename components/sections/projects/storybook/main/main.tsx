@@ -6,7 +6,7 @@ import { StorybookTabs } from '../tabs/tabs';
 export const StorybookMain = (): ReactElement => {
   return (
     <Box width={'100%'} bgcolor={'white'}>
-      {/* TODO: chilly dog image */}
+      {/* TODO: storybook image */}
       <StorybookTabs />
     </Box>
   );

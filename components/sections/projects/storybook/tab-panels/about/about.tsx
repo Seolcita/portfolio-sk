@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
 import Image from 'next/image';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 import { lilita } from '../../../../../../styles/Fonts';
 import * as S from './about.styles';
@@ -8,6 +9,7 @@ import {
   DeviceType,
   useWindowSize,
 } from '../../../../../../hooks/use-window-resize';
+import { Box, Button, IconButton } from '@mui/material';
 
 export const AboutStorybook = (): ReactElement => {
   const { deviceType } = useWindowSize();
@@ -18,33 +20,33 @@ export const AboutStorybook = (): ReactElement => {
     <S.Container>
       <S.ImageContainer>
         <Image
-          src='/assets/logo.svg'
+          src='/assets/stack-logos/storybook.png'
           alt='Logo'
           width={50}
           height={50}
           style={{ border: '0.2rem solid white', borderRadius: '50%' }}
         />
-        <S.LogoText className={lilita.className}>Chilly Dog</S.LogoText>
+        <S.LogoText className={lilita.className}>SK-Storybook</S.LogoText>
       </S.ImageContainer>
 
+      {/* Project Short Description */}
       <Typography
         variant='headingXS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
-        Simplifying Cold Weather Safety for Your Pet
+        React Component Library with Storybook
       </Typography>
       <Typography variant='textM' margin={['lg', 'none', 'none']}>
-        Chilly Dog is an intuitive application that presents real-time weather
-        updates and offers personalized guidance on whether the weather
-        conditions are suitable for a user's dog, taking into account the
-        specific details from the dog's profile. Additionally, it showcases the
-        progress of dog profiles being created. The application is designed with
-        accessibility in mind, ensuring ease of use for all users.
+        My React component library, enhanced with Storybook, is a curated
+        collection designed to accelerate and simplify the development of web
+        applications. It features a wide array of customizable, reusable
+        components, each meticulously documented and showcased within Storybook
+        for ease of use.
       </Typography>
       <S.ImageContainer>
         <Image
-          src='/assets/chilly-dog/mainpage.png'
+          src='/assets/storybook/storybook.png'
           alt='Logo'
           layout='responsive'
           width={700}
@@ -53,59 +55,74 @@ export const AboutStorybook = (): ReactElement => {
         />
       </S.ImageContainer>
 
+      {/* Accessibility */}
       <Typography
         variant='headingXS'
         fontWeight='bold'
         margin={['xl', 'none', 'none']}
       >
-        Motivation for creating the application
+        Accessibility Focus
       </Typography>
-
       <Typography variant='textM' margin={['lg', 'none']}>
-        I own an adorable border collie named Cookie. During her first winter, I
-        found myself frequently searching for information about the tolerance of
-        dogs to cold weather and came across a helpful chart. Realizing the
-        inconvenience of having to calculate this every time, I envisioned an
-        app that could instantly inform dog owners of safe weather conditions
-        for their pets. To facilitate this, users can create an account on my
-        website and set up a profile for their dog. To make the process
-        engaging, a graphic of a pooping dog shows progress, with just 6 simple
-        questions to complete the profile. If you find this too extensive,
-        there's no pressure - you can stop at any time and resume later without
-        losing your progress.
+        Committed to making components as accessible as possible, each component
+        in the library is designed and built with accessibility at its core,
+        adhering to the best practices and standards. This dedication ensures
+        that our components meet the needs of a diverse range of users,
+        fostering inclusivity and enhancing user experience across web
+        applications.
       </Typography>
 
+      {/* Documentation */}
       <Typography
         variant='headingXS'
         fontWeight='bold'
         margin={['xl', 'none', 'none']}
       >
-        A Guide to Calculation Method
+        Component Documentation
       </Typography>
+      <Typography variant='textM' margin={['lg', 'none']}>
+        Detailed documentation for each component is available in the Storybook,
+        including usage examples and prop definitions for each component.
+        Additionally, interactive demos allow developers to see and experiment
+        with the components in real-time, facilitating a deeper understanding
+        and easier integration into projects.
+      </Typography>
+
+      {/* Installation */}
       <Typography
-        variant='textM'
+        variant='headingXS'
         fontWeight='bold'
-        margin={['lg', 'none', 'md']}
+        margin={['xl', 'none', 'none']}
       >
-        Current Weather Information + ‘How Cold Is Too Cold’ chart + Dog Profile
+        Install Package
       </Typography>
-      <Typography variant='textM'>
-        The application considers weather to be 'wet' under the following
-        conditions:
+      <S.ClipboardContainer>
+        <Box marginRight={'2rem'}>
+          <pre>
+            <code>npm install sk-storybook</code>
+          </pre>
+        </Box>
+        <IconButton
+          aria-label='delete'
+          onClick={() =>
+            navigator.clipboard.writeText('npm install sk-storybook')
+          }
+        >
+          <ContentCopyIcon />
+        </IconButton>
+      </S.ClipboardContainer>
+
+      {/* Type Definitions */}
+      <Typography
+        variant='headingXS'
+        fontWeight='bold'
+        margin={['xl', 'none', 'none']}
+      >
+        Type Definitions
       </Typography>
-      <Typography variant='textM'>
-        rain, snow, drizzle, thunderstorms, or when the humidity exceeds 60%.
+      <Typography variant='textM' margin={['lg', 'none']}>
+        This package contains type definitions.
       </Typography>
-      <S.ChartContainer $isMobile={isMobile}>
-        <Image
-          src='/assets/chilly-dog/chart.png'
-          alt='Logo'
-          layout='responsive'
-          width={600}
-          height={700}
-          style={{ borderRadius: '0.5rem' }}
-        />
-      </S.ChartContainer>
     </S.Container>
   );
 };
