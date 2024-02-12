@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
 import { Typography } from 'sk-storybook';
 
-import * as S from './planning.styles';
+import * as S from '../../../chillyDog/tab-panels/planning/planning.styles';
 import { TitleBox } from '../../../../../atomic/title-box/title-box';
 
-export const PlanningChillyDog = (): ReactElement => {
+export const PlanningStorybook = (): ReactElement => {
   return (
     <S.Container>
       {/* Purpose */}
@@ -13,26 +13,30 @@ export const PlanningChillyDog = (): ReactElement => {
         <S.Ul>
           <S.Li>
             <Typography variant='textM'>
-              Creating fullstack web application using Next.js, Nest.js,
-              Typescript, MongoDB, styled-components, REST API,
-              react-testing-library and sk-storybook
+              Creating a Node Package Manager(NPM)
             </Typography>
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
-              Currently, sk-storybook(React component library) project is in
-              process. Install the package and use it in Chilly Dog application.
-              Check whether sk-storybook components works as intended
+              Developing a React Component Library establishing a robust and
+              reusable collection of UI components
             </Typography>
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
-              Enhancing the implementation of accessibility skills.
+              Developing environment for UI components, enabling isolated,
+              interactive, and documented views for efficient component testing
+              and showcasing
             </Typography>
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
-              Improving project planning skill
+              Enhancing the implementation of accessibility skills
+            </Typography>
+          </S.Li>
+          <S.Li>
+            <Typography variant='textM'>
+              Integrate this library into the Chilly Dog project
             </Typography>
           </S.Li>
         </S.Ul>
@@ -44,26 +48,7 @@ export const PlanningChillyDog = (): ReactElement => {
         <S.Ul>
           <S.Li>
             <Typography variant='textM'>
-              Authentication - Google sign in
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>CRUD dog profile</Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>
-              User can stop at any time and resume later without losing user’s
-              progress
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>
-              Display current weather information - weather API
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>
-              Calculate result with current weather information and dog profile
+              Creating a Node Package Manager
             </Typography>
           </S.Li>
           <S.Li>
@@ -71,15 +56,6 @@ export const PlanningChillyDog = (): ReactElement => {
               Focus on accessibility to ensure optimal usability for users
               relying on screen readers and keyboard navigation
             </Typography>
-            <Typography variant='textM'>
-              - User should able to access entire app by using tab only
-            </Typography>
-            <Typography variant='textM'>
-              - App should tell user component’s status and alert properly
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>Fully responsive</Typography>
           </S.Li>
         </S.Ul>
       </S.TopicContainer>
@@ -89,10 +65,10 @@ export const PlanningChillyDog = (): ReactElement => {
         <TitleBox title='Target Audience' imgUrl='/assets/logo.svg' />
         <S.Ul>
           <S.Li>
-            <Typography variant='textM'>Dog owners</Typography>
+            <Typography variant='textM'>React Developers</Typography>
           </S.Li>
           <S.Li>
-            <Typography variant='textM'>Age group: All</Typography>
+            <Typography variant='textM'>Designers</Typography>
           </S.Li>
         </S.Ul>
       </S.TopicContainer>
@@ -102,39 +78,16 @@ export const PlanningChillyDog = (): ReactElement => {
         <TitleBox title='Tech Stack' imgUrl='/assets/logo.svg' />
         <S.Ul>
           <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Frontend
-            </Typography>
-            <Typography variant='textM'>Next.js & Typescript</Typography>
+            <Typography variant='textM'>React</Typography>
           </S.Li>
           <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Backend
-            </Typography>
-            <Typography variant='textM'>Nest.js & Typescript</Typography>
+            <Typography variant='textM'>Typescript</Typography>
           </S.Li>
           <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Database
-            </Typography>
-            <Typography variant='textM'>MongoDB & Mongoose</Typography>
+            <Typography variant='textM'>Storybook</Typography>
           </S.Li>
           <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Styling
-            </Typography>
-            <Typography variant='textM'>
-              styled-components & sk-storybook(react component library I
-              published)
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Testing
-            </Typography>
-            <Typography variant='textM'>
-              React Testing Library & Jest
-            </Typography>
+            <Typography variant='textM'>React Testing Library</Typography>
           </S.Li>
         </S.Ul>
       </S.TopicContainer>
@@ -164,45 +117,13 @@ export const PlanningChillyDog = (): ReactElement => {
         </S.Ul>
       </S.TopicContainer>
 
-      {/* Project Timeline and Milestones */}
+      {/* Project Timeline */}
       <S.TopicContainer>
-        <TitleBox
-          title='Project Timeline and Milestones'
-          imgUrl='/assets/logo.svg'
-        />
-        <Typography variant='textM' margin={['lg', 'none', 'none']}>
-          Three sprints and a maintenance phase are planned, with each sprint
-          having a duration of three weeks.
-        </Typography>
+        <TitleBox title='Project Timeline' imgUrl='/assets/logo.svg' />
         <S.Ul>
           <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Sprint 1
-            </Typography>
             <Typography variant='textM'>
-              Frontend (setup + components)
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Sprint 2
-            </Typography>
-            <Typography variant='textM'>Backend + hook Frontend</Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Sprint 3
-            </Typography>
-            <Typography variant='textM'>
-              Improvement (refactor, accessibility)
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM' fontWeight='bold'>
-              Maintenance
-            </Typography>
-            <Typography variant='textM'>
-              Working on bugs and feedbacks
+              This is on going project. The timeline is not fixed.
             </Typography>
           </S.Li>
         </S.Ul>
@@ -239,25 +160,37 @@ export const PlanningChillyDog = (): ReactElement => {
         </S.Ul>
       </S.TopicContainer>
 
+      {/* Publish */}
+      <S.TopicContainer>
+        <TitleBox title='Publish' imgUrl='/assets/logo.svg' />
+        <S.Ul>
+          <S.Li>
+            <Typography variant='textM'>Publish npm package</Typography>
+          </S.Li>
+          <S.Li>
+            <Typography variant='textM'>
+              Integrate this library into the Chilly Dog project
+            </Typography>
+          </S.Li>
+          <S.Li>
+            <Typography variant='textM'>
+              Address any identified bugs following the integration process
+            </Typography>
+          </S.Li>
+          <S.Li>
+            <Typography variant='textM'>Re publish</Typography>
+          </S.Li>
+        </S.Ul>
+      </S.TopicContainer>
+
       {/* Deployment */}
       <S.TopicContainer>
         <TitleBox title='Deployment' imgUrl='/assets/logo.svg' />
         <S.Ul>
           <S.Li>
-            <Typography variant='textM'>Deploy Frontend and Backend</Typography>
-          </S.Li>
-          <S.Li>
             <Typography variant='textM'>
-              Gather Feedback from Test Users
+              Deploy SK-Storybook project on Vercel
             </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>
-              Addressing on feedbacks and bugs
-            </Typography>
-          </S.Li>
-          <S.Li>
-            <Typography variant='textM'>Release to the public</Typography>
           </S.Li>
         </S.Ul>
       </S.TopicContainer>
