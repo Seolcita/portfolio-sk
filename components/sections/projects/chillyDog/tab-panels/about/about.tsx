@@ -4,8 +4,16 @@ import Image from 'next/image';
 
 import { lilita } from '../../../../../../styles/Fonts';
 import * as S from './about.styles';
+import {
+  DeviceType,
+  useWindowSize,
+} from '../../../../../../hooks/use-window-resize';
 
 export const AboutChillyDog = (): ReactElement => {
+  const { deviceType } = useWindowSize();
+
+  const isMobile = deviceType === DeviceType.MOBILE;
+
   return (
     <S.Container>
       <S.ImageContainer>
@@ -22,11 +30,11 @@ export const AboutChillyDog = (): ReactElement => {
       <Typography
         variant='headingXS'
         fontWeight='bold'
-        margin={['xl', 'none', 'none']}
+        margin={['lg', 'none', 'none']}
       >
         Simplifying Cold Weather Safety for Your Pet
       </Typography>
-      <Typography variant='textM' margin={['xl', 'none', 'none']}>
+      <Typography variant='textM' margin={['lg', 'none', 'none']}>
         Chilly Dog is an intuitive application that presents real-time weather
         updates and offers personalized guidance on whether the weather
         conditions are suitable for a user's dog, taking into account the
@@ -53,7 +61,7 @@ export const AboutChillyDog = (): ReactElement => {
         Motivation for creating the application
       </Typography>
 
-      <Typography variant='textM' margin={['xl', 'none']}>
+      <Typography variant='textM' margin={['lg', 'none']}>
         I own an adorable border collie named Cookie. During her first winter, I
         found myself frequently searching for information about the tolerance of
         dogs to cold weather and came across a helpful chart. Realizing the
@@ -77,7 +85,7 @@ export const AboutChillyDog = (): ReactElement => {
       <Typography
         variant='textM'
         fontWeight='bold'
-        margin={['xl', 'none', 'md']}
+        margin={['lg', 'none', 'md']}
       >
         Current Weather Information + ‘How Cold Is Too Cold’ chart + Dog Profile
       </Typography>
@@ -88,8 +96,7 @@ export const AboutChillyDog = (): ReactElement => {
       <Typography variant='textM'>
         rain, snow, drizzle, thunderstorms, or when the humidity exceeds 60%.
       </Typography>
-
-      <S.ImageContainer>
+      <S.ChartContainer $isMobile={isMobile}>
         <Image
           src='/assets/chilly-dog/chart.png'
           alt='Logo'
@@ -98,7 +105,7 @@ export const AboutChillyDog = (): ReactElement => {
           height={700}
           style={{ borderRadius: '0.5rem' }}
         />
-      </S.ImageContainer>
+      </S.ChartContainer>
     </S.Container>
   );
 };

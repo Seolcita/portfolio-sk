@@ -21,6 +21,10 @@ export const Container = styled(Center)`
 
   @media ${device.md} {
     max-width: 150rem;
-    padding: 4rem;
+    width: 70%;
+  }
+
+  @media ${device.lg} {
+    width: 65%;
   }
 `;

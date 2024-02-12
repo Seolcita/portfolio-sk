@@ -5,7 +5,7 @@ import { Center } from '../../../../../common/flex.styles';
 export const Container = styled(Center)`
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 `;
 
 export const TitleContainer = styled(Center)`

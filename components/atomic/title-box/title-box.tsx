@@ -7,11 +7,16 @@ import * as S from './title-box.styles';
 interface TitleBoxProps {
   title: string;
   imgUrl?: string;
+  bgColor?: string;
 }
 
-export const TitleBox = ({ title, imgUrl }: TitleBoxProps): ReactElement => {
+export const TitleBox = ({
+  title,
+  imgUrl,
+  bgColor,
+}: TitleBoxProps): ReactElement => {
   return (
-    <S.container>
+    <S.Container $bgColor={bgColor}>
       {imgUrl && (
         <S.ImageContainer aria-hidden>
           <Image
@@ -26,6 +31,6 @@ export const TitleBox = ({ title, imgUrl }: TitleBoxProps): ReactElement => {
       <Typography variant='textL' color='white'>
         {title}
       </Typography>
-    </S.container>
+    </S.Container>
   );
 };

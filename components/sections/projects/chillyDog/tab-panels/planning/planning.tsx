@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Card, Typography } from 'sk-storybook';
+import { Typography } from 'sk-storybook';
 
 import * as S from './planning.styles';
 import { TitleBox } from '../../../../../atomic/title-box/title-box';
@@ -7,14 +7,6 @@ import { TitleBox } from '../../../../../atomic/title-box/title-box';
 export const PlanningChillyDog = (): ReactElement => {
   return (
     <S.Container>
-      <Typography
-        variant='headingS'
-        fontWeight='bold'
-        margin={['xl', 'none', 'xl']}
-      >
-        Planning
-      </Typography>
-
       {/* Purpose */}
       <S.TopicContainer>
         <TitleBox title='Purpose' imgUrl='/assets/logo.svg' />

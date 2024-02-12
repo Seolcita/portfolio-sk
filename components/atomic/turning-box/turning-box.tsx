@@ -16,8 +16,8 @@ export const TurningBox = ({
 }: TurningBoxProps): ReactElement => {
   return (
     <S.Container $borderRadius={borderRadius}>
-      <S.Front $bgImageUrl={imageUrl}></S.Front>
-      <S.Back $bgImageUrl={imageUrl}>
+      <S.Front $bgImageUrl={imageUrl} $borderRadius={borderRadius}></S.Front>
+      <S.Back $borderRadius={borderRadius}>
         <S.Inner>
           <Typography variant='textS' fontWeight='bold'>
             {title}
