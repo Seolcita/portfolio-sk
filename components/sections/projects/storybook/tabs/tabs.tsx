@@ -3,6 +3,7 @@ import { Box, Tab, Tabs } from '@mui/material';
 import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
 import { TabPanel } from '../../../../atomic/tab-panel/tab-panel';
 import { AboutStorybook } from '../tab-panels/about/about';
+import { PlanningStorybook } from '../tab-panels/planning/planning';
 
 export const StorybookTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -38,7 +39,7 @@ export const StorybookTabs = (): ReactElement => {
         <AboutStorybook />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Planning
+        <PlanningStorybook />
       </TabPanel>
       <TabPanel value={value} index={2}>
         tickets

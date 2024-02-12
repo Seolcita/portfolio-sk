@@ -27,7 +27,7 @@ export const PlanningChillyDog = (): ReactElement => {
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
-              Familiarize with accessibility
+              Enhancing the implementation of accessibility skills.
             </Typography>
           </S.Li>
           <S.Li>
@@ -133,7 +133,7 @@ export const PlanningChillyDog = (): ReactElement => {
               Testing
             </Typography>
             <Typography variant='textM'>
-              React testing library & Jest
+              React Testing Library & Jest
             </Typography>
           </S.Li>
         </S.Ul>
@@ -244,7 +244,7 @@ export const PlanningChillyDog = (): ReactElement => {
         <TitleBox title='Deployment' imgUrl='/assets/logo.svg' />
         <S.Ul>
           <S.Li>
-            <Typography variant='textM'>Launch Frontend and Backend</Typography>
+            <Typography variant='textM'>Deploy Frontend and Backend</Typography>
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
@@ -253,7 +253,7 @@ export const PlanningChillyDog = (): ReactElement => {
           </S.Li>
           <S.Li>
             <Typography variant='textM'>
-              Working on feedbacks and bugs
+              Addressing on feedbacks and bugs
             </Typography>
           </S.Li>
           <S.Li>
@@ -270,7 +270,7 @@ export const PlanningChillyDog = (): ReactElement => {
             <Typography variant='textM'>Fixing bugs</Typography>
           </S.Li>
           <S.Li>
-            <Typography variant='textM'>Working on feedbacks</Typography>
+            <Typography variant='textM'>Addressing feedbacks</Typography>
           </S.Li>
           <S.Li>
             <Typography variant='textM'>Dependency Management</Typography>
