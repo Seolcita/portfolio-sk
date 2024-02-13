@@ -8,6 +8,7 @@ import { a11yProps } from '../../../../atomic/tab-panel/a11yProps';
 import { PlanningStorybook } from '../tab-panels/planning/planning';
 import { ChallengesStorybook } from '../tab-panels/challenges/challenges';
 import { ImprovementStorybook } from '../tab-panels/Improvement/improvement';
+import { StackStorybook } from '../tab-panels/stack/stack';
 
 export const StorybookTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -33,25 +34,29 @@ export const StorybookTabs = (): ReactElement => {
           aria-label='basic tabs example'
         >
           <Tab label='About' {...a11yProps(0)} sx={customTabStyle} />
-          <Tab label='Planning' {...a11yProps(1)} sx={customTabStyle} />
-          <Tab label='Tasks' {...a11yProps(2)} sx={customTabStyle} />
-          <Tab label='Challenges' {...a11yProps(3)} sx={customTabStyle} />
-          <Tab label='Improvment' {...a11yProps(4)} sx={customTabStyle} />
+          <Tab label='Stack' {...a11yProps(1)} sx={customTabStyle} />
+          <Tab label='Planning' {...a11yProps(2)} sx={customTabStyle} />
+          <Tab label='Tasks' {...a11yProps(3)} sx={customTabStyle} />
+          <Tab label='Challenges' {...a11yProps(4)} sx={customTabStyle} />
+          <Tab label='Improvment' {...a11yProps(5)} sx={customTabStyle} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <AboutStorybook />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <PlanningStorybook />
+        <StackStorybook />
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <PlanningStorybook />
+      </TabPanel>
+      <TabPanel value={value} index={32}>
         <SprintsStorybook />
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={4}>
         <ChallengesStorybook />
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={5}>
         <ImprovementStorybook />
       </TabPanel>
     </Box>
