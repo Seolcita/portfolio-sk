@@ -1,10 +1,9 @@
 import { ReactElement } from 'react';
-import Image from 'next/image';
-import { Card, Typography } from 'sk-storybook';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Card, Typography } from 'sk-storybook';
+import Image from 'next/image';
 
 import * as S from './project-cards.styles';
-import { Box } from '@mui/material';
 
 export const ProjectCards = (): ReactElement => {
   return (
@@ -108,29 +107,7 @@ export const ProjectCards = (): ReactElement => {
                   </Typography>
                 </S.LinkItem>
               </a>
-              <a
-                href='https://www.npmjs.com/package/sk-storybook'
-                target='_blank'
-              >
-                <S.LinkItem>
-                  <Image
-                    src='/assets/storybook/npm.svg'
-                    alt='Logo'
-                    width={22}
-                    height={22}
-                    style={{
-                      borderRadius: '50%',
-                    }}
-                  />
-                  <Typography
-                    variant='textM'
-                    fontWeight='bold'
-                    margin={['none', 'none', 'none', 'md']}
-                  >
-                    npm
-                  </Typography>
-                </S.LinkItem>
-              </a>
+
               <a href='https://github.com/Seolcita/s-storybook' target='_blank'>
                 <S.LinkItem>
                   <GitHubIcon fontSize='large' sx={{ color: 'black' }} />

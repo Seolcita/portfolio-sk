@@ -12,6 +12,7 @@ import { AccessibilityChillyDog } from '../tab-panels/accessibility/accessibilit
 import { ChallengesChillyDog } from '../tab-panels/challenges/challenges';
 import { ImprovementChillyDog } from '../tab-panels/Improvement/improvement';
 import { StackChillyDog } from '../tab-panels/stack/stack';
+import { LinksChillyDog } from '../tab-panels/links/links';
 
 export const ChillyDogTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -45,6 +46,7 @@ export const ChillyDogTabs = (): ReactElement => {
           <Tab label='Accessibility' {...a11yProps(6)} sx={customTabStyle} />
           <Tab label='Challenges' {...a11yProps(7)} sx={customTabStyle} />
           <Tab label='Improvement' {...a11yProps(8)} sx={customTabStyle} />
+          <Tab label='Links' {...a11yProps(9)} sx={customTabStyle} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -73,6 +75,9 @@ export const ChillyDogTabs = (): ReactElement => {
       </TabPanel>
       <TabPanel value={value} index={8}>
         <ImprovementChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={9}>
+        <LinksChillyDog />
       </TabPanel>
     </Box>
   );

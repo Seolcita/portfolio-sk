@@ -53,6 +53,7 @@ export const Intorduction = (): ReactElement => {
           marginBottom: marginButtom,
         }}
       />
+
       <S.TextContainer>
         <Typography
           variant='textM'

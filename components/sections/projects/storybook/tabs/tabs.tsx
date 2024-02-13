@@ -9,6 +9,7 @@ import { PlanningStorybook } from '../tab-panels/planning/planning';
 import { ChallengesStorybook } from '../tab-panels/challenges/challenges';
 import { ImprovementStorybook } from '../tab-panels/Improvement/improvement';
 import { StackStorybook } from '../tab-panels/stack/stack';
+import { LinksStorybook } from '../tab-panels/links/links';
 
 export const StorybookTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -39,6 +40,7 @@ export const StorybookTabs = (): ReactElement => {
           <Tab label='Tasks' {...a11yProps(3)} sx={customTabStyle} />
           <Tab label='Challenges' {...a11yProps(4)} sx={customTabStyle} />
           <Tab label='Improvment' {...a11yProps(5)} sx={customTabStyle} />
+          <Tab label='Links' {...a11yProps(6)} sx={customTabStyle} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -58,6 +60,9 @@ export const StorybookTabs = (): ReactElement => {
       </TabPanel>
       <TabPanel value={value} index={5}>
         <ImprovementStorybook />
+      </TabPanel>
+      <TabPanel value={value} index={6}>
+        <LinksStorybook />
       </TabPanel>
     </Box>
   );
