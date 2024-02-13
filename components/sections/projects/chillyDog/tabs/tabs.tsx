@@ -11,6 +11,7 @@ import { UseCaseChillyDog } from '../tab-panels/usecase/usecase';
 import { AccessibilityChillyDog } from '../tab-panels/accessibility/accessibility';
 import { ChallengesChillyDog } from '../tab-panels/challenges/challenges';
 import { ImprovementChillyDog } from '../tab-panels/Improvement/improvement';
+import { StackChillyDog } from '../tab-panels/stack/stack';
 
 export const ChillyDogTabs = (): ReactElement => {
   const [value, setValue] = useState(0);
@@ -36,37 +37,41 @@ export const ChillyDogTabs = (): ReactElement => {
           aria-label='basic tabs example'
         >
           <Tab label='About' {...a11yProps(0)} sx={customTabStyle} />
-          <Tab label='Planning' {...a11yProps(1)} sx={customTabStyle} />
-          <Tab label='Sprints & Tasks' {...a11yProps(2)} sx={customTabStyle} />
-          <Tab label='Use Case' {...a11yProps(3)} sx={customTabStyle} />
-          <Tab label='Flow Chart' {...a11yProps(4)} sx={customTabStyle} />
-          <Tab label='Accessibility' {...a11yProps(5)} sx={customTabStyle} />
-          <Tab label='Challenges' {...a11yProps(6)} sx={customTabStyle} />
-          <Tab label='Improvement' {...a11yProps(7)} sx={customTabStyle} />
+          <Tab label='Stack' {...a11yProps(1)} sx={customTabStyle} />
+          <Tab label='Planning' {...a11yProps(2)} sx={customTabStyle} />
+          <Tab label='Sprints & Tasks' {...a11yProps(3)} sx={customTabStyle} />
+          <Tab label='Use Case' {...a11yProps(4)} sx={customTabStyle} />
+          <Tab label='Flow Chart' {...a11yProps(5)} sx={customTabStyle} />
+          <Tab label='Accessibility' {...a11yProps(6)} sx={customTabStyle} />
+          <Tab label='Challenges' {...a11yProps(7)} sx={customTabStyle} />
+          <Tab label='Improvement' {...a11yProps(8)} sx={customTabStyle} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <AboutChillyDog />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <PlanningChillyDog />
+        <StackChillyDog />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <SprintsChillyDog />
+        <PlanningChillyDog />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <UseCaseChillyDog />
+        <SprintsChillyDog />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <FlowChillyDog />
+        <UseCaseChillyDog />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <AccessibilityChillyDog />
+        <FlowChillyDog />
       </TabPanel>
       <TabPanel value={value} index={6}>
-        <ChallengesChillyDog />
+        <AccessibilityChillyDog />
       </TabPanel>
       <TabPanel value={value} index={7}>
+        <ChallengesChillyDog />
+      </TabPanel>
+      <TabPanel value={value} index={8}>
         <ImprovementChillyDog />
       </TabPanel>
     </Box>

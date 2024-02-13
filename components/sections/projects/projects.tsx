@@ -1,24 +1,54 @@
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 
 import * as S from './projects.styles';
 import { Typography } from 'sk-storybook';
-import { Box } from '@mui/material';
-import { ChillyDogMain } from './chillyDog/main/main';
+import { Box, Button } from '@mui/material';
+import AutorenewIcon from '@mui/icons-material/Autorenew';
+
 import { ChillyDogTabs } from './chillyDog/tabs/tabs';
 import { StorybookTabs } from './storybook/tabs/tabs';
-import { StorybookMain } from './storybook/main/main';
+
+import { ProjectCards } from './project-cards';
 
 export const Projects = (): ReactElement => {
+  const [toggleProject, setToggleProject] = useState(true);
+
+  const projectTitle = toggleProject ? 'Storybook' : 'Chilly Dog';
+
+  const handleOnClick = () => {
+    setToggleProject(!toggleProject);
+  };
+
   return (
     <S.Container>
       <Typography variant='headingM' fontWeight='bold'>
         Projects
       </Typography>
-      <Box width={'100%'} bgcolor={'skyblue'} marginTop={'5rem'}>
-        <ChillyDogMain />
-      </Box>
-      <Box width={'100%'} bgcolor={'skyblue'} marginTop={'5rem'}>
-        <StorybookMain />
+
+      <ProjectCards />
+
+      <S.ButtonContainer>
+        <Button
+          variant='contained'
+          onClick={handleOnClick}
+          sx={{ padding: '1rem 2rem' }}
+        >
+          <AutorenewIcon fontSize='large' />
+          <Typography variant='textXS' color='white' margin={['none', 'md']}>
+            Switch to
+          </Typography>
+          <Typography variant='textM' color='white' fontWeight='bold'>
+            &nbsp;{projectTitle}&nbsp;&nbsp;
+          </Typography>
+          <Typography variant='textXS' color='white'>
+            Detail
+          </Typography>
+        </Button>
+      </S.ButtonContainer>
+
+      <Box width={'100%'} bgcolor={'white'} borderRadius={'0.75rem'}>
+        {toggleProject && <ChillyDogTabs />}
+        {!toggleProject && <StorybookTabs />}
       </Box>
     </S.Container>
   );
