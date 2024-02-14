@@ -8,8 +8,7 @@ import { Intorduction } from '../introduction/introduction';
 import { MainSkills } from '../skills/skills';
 import { Projects } from '../projects/projects';
 import { Experience } from '../experience/experience';
-// import { References } from '../references/references';
-// import { Contact } from '../contact/contact';
+import { Contact } from '../contact/contact';
 import * as S from './main.styles';
 
 export const Main = (): ReactElement => {
@@ -20,9 +19,8 @@ export const Main = (): ReactElement => {
       <Experience />
       <MainSkills />
       <Projects />
-      {/* <Hero />
-      <References />
-      <Contact /> */}
+      <Contact />
+      {/* <Hero />*/}
     </S.Container>
   );
 };
