@@ -10,7 +10,6 @@ const tsUrl = '/assets/stack-logos/ts.svg';
 const reactUrl = '/assets/stack-logos/react.png';
 const nextUrl = '/assets/stack-logos/next.svg';
 const storybooklUrl = '/assets/stack-logos/storybook.png';
-const muilUrl = '/assets/stack-logos/mui.svg';
 const graphqlUrl = '/assets/stack-logos/graphql.png';
 const expressUrl = '/assets/stack-logos/express.svg';
 const mongodbUrl = '/assets/stack-logos/mongodb.svg';
@@ -21,7 +20,6 @@ const stackLogos = [
   reactUrl,
   nextUrl,
   storybooklUrl,
-  muilUrl,
   graphqlUrl,
   expressUrl,
   mongodbUrl,
