@@ -18,7 +18,7 @@ export const ContactInfo = (): ReactElement => {
       <S.Card>
         <Box display='flex' flexDirection='column' alignItems='start' gap={1}>
           <Typography variant='headingXS' fontWeight='bold'>
-            Let's get in touch
+            Let's get in touch!
           </Typography>
           <S.Item>
             <PhoneAndroidIcon fontSize='medium' />
@@ -37,7 +37,7 @@ export const ContactInfo = (): ReactElement => {
         </Box>
         <Box>
           <Typography variant='headingXS' fontWeight='bold'>
-            Let's get in touch
+            Connect with me!
           </Typography>
           <S.IconsContainer>
             <IconButton>
