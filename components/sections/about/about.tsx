@@ -1,13 +1,77 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
 import { Typography } from 'sk-storybook';
 import * as S from './about.styles';
+import { MoveImageProps } from '../hero/hero';
+
+const penguin1 = '/assets/hero/penguin1.png';
+const penguin2 = '/assets/hero/penguin2.png';
+const penguin3 = '/assets/hero/penguin3.png';
 
 export const About = (): ReactElement => {
+  const [penguinOneMovement, setPenguineOneMovement] =
+    useState<MoveImageProps>();
+  const [penguinTwoMovement, setPenginTwoMovement] = useState<MoveImageProps>();
+  const [penguinThreeMovement, setPenguinThreeMovement] =
+    useState<MoveImageProps>();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scroll = Math.ceil(window.scrollY);
+      console.log('scroll', scroll);
+      setPenguineOneMovement({
+        xAxis: scroll * -0.05,
+        yAxis: scroll * 0.05,
+        zAxis: scroll * 0.01,
+      });
+      setPenginTwoMovement({
+        xAxis: scroll * -0.01,
+        yAxis: scroll * 0.01,
+        zAxis: scroll * 0.01,
+      });
+      setPenguinThreeMovement({
+        xAxis: scroll * -0.04,
+        yAxis: scroll * 0.03,
+        zAxis: scroll * 0.01,
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <S.Container>
+      {/* <S.PenguinOne
+        $movement={penguinOneMovement}
+        src={penguin1}
+        width={300}
+        height={300}
+        alt='Hero Image'
+        layout='responsive'
+      />
+      <S.PenguinTwo
+        $movement={penguinTwoMovement}
+        src={penguin2}
+        width={300}
+        height={300}
+        alt='Hero Image'
+        layout='responsive'
+      />
+      <S.PenguinThree
+        $movement={penguinThreeMovement}
+        src={penguin3}
+        width={300}
+        height={300}
+        alt='Hero Image'
+        layout='responsive'
+      /> */}
       <Typography variant='headingM' fontWeight='bold'>
         About me
+        {/* {JSON.stringify(penguinTwoMovement)} */}
       </Typography>
       <S.TextContainer>
         <S.Pharagraph>
