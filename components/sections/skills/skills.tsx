@@ -19,7 +19,7 @@ const mongodbUrl = '/assets/stack-logos/mongodb.svg';
 
 export const MainSkills = (): ReactElement => {
   return (
-    <S.Container>
+    <S.Container id='skills'>
       <Typography variant='headingM' fontWeight='bold'>
         Skills
       </Typography>

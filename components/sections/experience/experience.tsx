@@ -28,7 +28,7 @@ const stackLogos = [
 
 export const Experience = (): ReactElement => {
   return (
-    <S.Container>
+    <S.Container id='experience'>
       <Typography variant='headingM' fontWeight='bold'>
         Experience
       </Typography>
