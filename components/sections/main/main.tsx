@@ -2,7 +2,7 @@
 
 import { ReactElement } from 'react';
 
-// import { Hero } from '../hero/hero';
+import { Hero } from '../hero/hero';
 import { About } from '../about/about';
 import { Intorduction } from '../introduction/introduction';
 import { MainSkills } from '../skills/skills';
@@ -14,13 +14,13 @@ import * as S from './main.styles';
 export const Main = (): ReactElement => {
   return (
     <S.Container>
+      <Hero />
       <Intorduction />
       <About />
       <Experience />
       <MainSkills />
       <Projects />
       <Contact />
-      {/* <Hero />*/}
     </S.Container>
   );
 };

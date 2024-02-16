@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 import { Center } from '../../common/flex.styles';
 import { device } from '../../../styles/Breakpoints';
+import Image from 'next/image';
+import { ImageProps } from '../hero/hero.styles';
 
 export const Container = styled(Center)`
+  paddig: 10rem 0;
+
   @media ${device.xs} {
     flex-direction: column;
     align-items: center;
@@ -26,7 +30,7 @@ export const Container = styled(Center)`
     justify-content: center;
     max-width: 150rem;
     width: 70%;
-    padding: 10rem 0;
+    padding: 20rem 0;
   }
 
   @media ${device.lg} {

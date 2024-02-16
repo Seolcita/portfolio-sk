@@ -2,9 +2,14 @@ import styled from 'styled-components';
 
 import { Center } from '../../common/flex.styles';
 import { device } from '../../../styles/Breakpoints';
+import Image from 'next/image';
+import { ImageProps } from '../hero/hero.styles';
 
 export const Container = styled(Center)`
   flex-direction: column;
+
+  position: relative;
+  perspective: 500px;
 
   @media ${device.xs} {
     align-items: center;

@@ -15,7 +15,6 @@ interface ImageSize {
 
 export const Intorduction = (): ReactElement => {
   const { deviceType } = useWindowSize();
-
   const isMobile = deviceType === DeviceType.MOBILE;
   const isTablet = deviceType === DeviceType.TABLET;
   const isLaptop = deviceType === DeviceType.LAPTOP;
