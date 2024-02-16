@@ -82,8 +82,8 @@ export const Hero = (): ReactElement => {
       <S.Whale
         $movement={whaleMovement}
         src={whale}
-        width={1500}
-        height={1500}
+        width={1000}
+        height={750}
         alt='Hero Image'
       />
       <S.BirdOne

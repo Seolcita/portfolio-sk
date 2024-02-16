@@ -30,7 +30,7 @@ export const Whale = styled(Image)<ImageProps>`
   margin-top: ${({ $movement }) => $movement?.top}rem;
   margin-left: -${({ $movement }) => $movement?.left}rem;
   transform: rotate(${({ $movement }) => $movement?.rotate}deg)
-    translateZ(${({ $movement }) => $movement?.zAxis}rem);
+    translateZ(${({ $movement }) => $movement?.zAxis}rem) scale(0.8);
 `;
 export const BirdOne = styled(Image)<ImageProps>`
   ${({ $movement }) =>

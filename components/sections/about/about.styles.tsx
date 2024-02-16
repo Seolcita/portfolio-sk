@@ -54,11 +54,10 @@ export const Pharagraph = styled.div`
 export const PenguinOne = styled(Image)<ImageProps>`
   position: absolute;
   top: -80rem;
-  left: 100rem;
+  right: -60rem;
   width: 100%;
   height: 100%;
-  transform: rotate(-90deg) translateZ(10rem);
-  z-index: -1;
+  transform: rotate(-90deg) scale(0.1);
 
   ${({ $movement }) =>
     $movement &&
@@ -67,36 +66,34 @@ export const PenguinOne = styled(Image)<ImageProps>`
     $movement.zAxis &&
     `transform: translateX(${$movement?.xAxis}rem) translateY(${
       $movement?.yAxis
-    }rem) translateZ(${15 + $movement?.zAxis}rem) rotate(-90deg);
-  `};
+    }rem) translateZ(${15 + $movement?.zAxis}rem) rotate(-90deg) scale(0.1);
+`};
 `;
 
 export const PenguinTwo = styled(Image)<ImageProps>`
   position: absolute;
-  top: -50rem;
-  left: 70rem;
+  top: -80rem;
+  right: -90rem;
   width: 100%;
   height: 100%;
-  transform: rotate(-90deg);
-  z-index: -1;
+  transform: rotate(-80deg) scale(0.1);
 
   ${({ $movement }) =>
     $movement &&
     $movement.xAxis &&
     $movement.yAxis &&
     $movement.zAxis &&
-    `transform: translateX(${$movement?.xAxis}rem) translateY(${
-      $movement?.yAxis
-    }rem) translateZ(${-2 * $movement.zAxis}rem) rotate(-90deg);
-  `};
+    `transform: translateX(${$movement?.xAxis}rem) translateY(${$movement?.yAxis}rem) translateZ(${$movement.zAxis}rem) rotate(-80deg) scale(0.1);
+`};
 `;
+
 export const PenguinThree = styled(Image)<ImageProps>`
   position: absolute;
-  top: -30rem;
-  left: 60rem;
+  top: -100rem;
+  right: -80rem;
   width: 100%;
   height: 100%;
-  transform: rotate(-60deg) translateZ(10rem);
+  transform: rotate(-60deg) scale(0.1);
   z-index: -1;
 
   ${({ $movement }) =>
@@ -106,6 +103,6 @@ export const PenguinThree = styled(Image)<ImageProps>`
     $movement.zAxis &&
     `transform: translateX(${$movement?.xAxis}rem) translateY(${
       $movement?.yAxis
-    }rem) translateZ(${10 + $movement.zAxis}rem) rotate(-60deg);
-  `};
+    }rem) translateZ(${-3 * $movement.zAxis}rem) rotate(-60deg) scale(0.1);
+`};
 `;

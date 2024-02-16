@@ -4,9 +4,9 @@ import { Typography } from 'sk-storybook';
 import * as S from './about.styles';
 import { MoveImageProps } from '../hero/hero';
 
-const penguin1 = '/assets/hero/penguin1.png';
-const penguin2 = '/assets/hero/penguin2.png';
-const penguin3 = '/assets/hero/penguin3.png';
+const penguin1 = '/assets/parallax/penguin1.png';
+const penguin2 = '/assets/parallax/penguin2.png';
+const penguin3 = '/assets/parallax/penguin3.png';
 
 export const About = (): ReactElement => {
   const [penguinOneMovement, setPenguineOneMovement] =
@@ -25,13 +25,13 @@ export const About = (): ReactElement => {
         zAxis: scroll * 0.01,
       });
       setPenginTwoMovement({
-        xAxis: scroll * -0.01,
-        yAxis: scroll * 0.01,
+        xAxis: scroll * -0.06,
+        yAxis: scroll * 0.025,
         zAxis: scroll * 0.01,
       });
       setPenguinThreeMovement({
-        xAxis: scroll * -0.04,
-        yAxis: scroll * 0.03,
+        xAxis: scroll * -0.02,
+        yAxis: scroll * 0.01,
         zAxis: scroll * 0.01,
       });
     };
@@ -45,7 +45,7 @@ export const About = (): ReactElement => {
 
   return (
     <S.Container>
-      {/* <S.PenguinOne
+      <S.PenguinOne
         $movement={penguinOneMovement}
         src={penguin1}
         width={300}
@@ -68,7 +68,7 @@ export const About = (): ReactElement => {
         height={300}
         alt='Hero Image'
         layout='responsive'
-      /> */}
+      />
       <Typography variant='headingM' fontWeight='bold'>
         About me
         {/* {JSON.stringify(penguinTwoMovement)} */}

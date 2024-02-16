@@ -18,9 +18,9 @@ const storybooklUrl = '/assets/stack-logos/storybook.png';
 const expressUrl = '/assets/stack-logos/express.svg';
 const nestUrl = '/assets/stack-logos/nest.svg';
 const mongodbUrl = '/assets/stack-logos/mongodb.svg';
-const bird2 = '/assets/hero/bird2.png';
-const bird3 = '/assets/hero/bird3.png';
-const whale = '/assets/hero/whale.png';
+const bird2 = '/assets/parallax/bird2.png';
+const bird3 = '/assets/parallax/bird3.png';
+const whale = '/assets/parallax/whale.png';
 
 export const MainSkills = (): ReactElement => {
   const [whaleMovement, setWhaleMovement] = useState<MoveImageProps>();
@@ -32,19 +32,17 @@ export const MainSkills = (): ReactElement => {
       let scroll = Math.ceil(window.scrollY);
 
       setBirdTwoMovement({
-        xAxis: scroll * -0.01,
-        yAxis: scroll * -0.01,
-        zAxis: scroll * -0.02,
+        zAxis: scroll * 0.01,
       });
       setBirdThreeMovement({
-        xAxis: scroll * -0.01,
-        yAxis: scroll * -0.02,
+        xAxis: scroll * -0.02,
+        yAxis: scroll * 0.025,
         zAxis: scroll * 0.01,
       });
       setWhaleMovement({
-        xAxis: scroll * 0.05,
-        yAxis: scroll * 0.02,
-        rotate: scroll * -0.05,
+        xAxis: scroll * 0.035,
+        yAxis: scroll * 0.03,
+        rotate: scroll * 0.025,
       });
     };
 
@@ -53,11 +51,11 @@ export const MainSkills = (): ReactElement => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [whaleMovement]);
+  }, [birdTwoMovement]);
 
   return (
     <S.Container>
-      {/* <S.BirdTwo
+      <S.BirdTwo
         $movement={birdTwoMovement}
         src={bird2}
         width={500}
@@ -79,7 +77,8 @@ export const MainSkills = (): ReactElement => {
         width={600}
         height={400}
         alt='Hero Image'
-      /> */}
+        layout='responsive'
+      />
       <Typography variant='headingM' fontWeight='bold'>
         Skills
       </Typography>
