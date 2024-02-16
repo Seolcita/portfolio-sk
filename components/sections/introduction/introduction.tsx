@@ -14,8 +14,6 @@ interface ImageSize {
   height: number;
 }
 
-const whale = '/assets/hero/whale.png';
-
 export const Intorduction = (): ReactElement => {
   const [whaleMovement, setWhaleMovement] = useState<MoveImageProps>();
 
@@ -65,14 +63,6 @@ export const Intorduction = (): ReactElement => {
 
   return (
     <S.Container>
-      {/* <S.Whale
-        $movement={whaleMovement}
-        src={whale}
-        width={800}
-        height={600}
-        alt='Hero Image'
-      /> */}
-
       <Image
         src={ProfilePhoto}
         alt='Seol Hi portfolio image'
