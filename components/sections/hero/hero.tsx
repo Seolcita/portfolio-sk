@@ -1,8 +1,10 @@
-'use client';
+// 'use client';
 
 import { ReactElement, useEffect, useState } from 'react';
 import * as S from './hero.styles';
 import Image from 'next/image';
+import { NavBar } from '../../atomic/nav/nav';
+import { dancingScript } from '../../../styles/Fonts';
 
 const background = '/assets/hero/bg.png';
 const whale = '/assets/hero/whale.png';
@@ -27,8 +29,7 @@ export interface MoveImageProps {
 }
 
 export const Hero = (): ReactElement => {
-  const [backgroundMovement, setBackgroundMovement] =
-    useState<MoveImageProps>();
+  const [titleMovement, setTitleMovement] = useState<MoveImageProps>();
   const [whaleMovement, setWhaleMovement] = useState<MoveImageProps>();
   const [birdOneMovement, setBirdOneMovement] = useState<MoveImageProps>();
   const [birdTwoMovement, setBirdTwoMovement] = useState<MoveImageProps>();
@@ -46,7 +47,6 @@ export const Hero = (): ReactElement => {
   useEffect(() => {
     const handleScroll = () => {
       let scroll = Math.ceil(window.scrollY);
-      setBackgroundMovement({ top: scroll * 0.2 });
       setWhaleMovement({
         top: scroll * 0.1,
         left: scroll * 0.1,
@@ -71,85 +71,93 @@ export const Hero = (): ReactElement => {
   }, []);
 
   return (
-    <S.Container>
-      <S.Background
-        $movement={backgroundMovement}
-        src={background}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-      />
-      <S.Whale
-        $movement={whaleMovement}
-        src={whale}
-        width={1000}
-        height={750}
-        alt='Hero Image'
-      />
-      <S.BirdOne
-        $movement={birdOneMovement}
-        src={bird1}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.BirdTwo
-        $movement={birdTwoMovement}
-        src={bird2}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.BirdThree
-        $movement={birdThreeMovement}
-        src={bird3}
-        width={1500}
-        height={1500}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.BirdsSmall
-        $movement={birdsSmallMovement}
-        src={birdsSmall}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.BirdsLarge
-        $movement={birdsLargeMovement}
-        src={birdsLarge}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.PenguinOne
-        $movement={penguinOneMovement}
-        src={penguin1}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.PenguinTwo
-        $movement={penguinTwoMovement}
-        src={penguin2}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-      <S.PenguinThree
-        $movement={penguinThreeMovement}
-        src={penguin3}
-        width={1500}
-        height={1000}
-        alt='Hero Image'
-        layout='responsive'
-      />
-    </S.Container>
+    <>
+      <S.Container id='hero'>
+        <NavBar />
+        <S.TitleBox className={dancingScript.className}>
+          <S.Title>Imagenation</S.Title>
+          <S.Title>Into </S.Title>
+          <S.Title>Reality</S.Title>
+        </S.TitleBox>
+
+        <S.Background
+          src={background}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+        />
+        <S.Whale
+          $movement={whaleMovement}
+          src={whale}
+          width={1000}
+          height={750}
+          alt='Hero Image'
+        />
+        <S.BirdOne
+          $movement={birdOneMovement}
+          src={bird1}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.BirdTwo
+          $movement={birdTwoMovement}
+          src={bird2}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.BirdThree
+          $movement={birdThreeMovement}
+          src={bird3}
+          width={1500}
+          height={1500}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.BirdsSmall
+          $movement={birdsSmallMovement}
+          src={birdsSmall}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.BirdsLarge
+          $movement={birdsLargeMovement}
+          src={birdsLarge}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.PenguinOne
+          $movement={penguinOneMovement}
+          src={penguin1}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.PenguinTwo
+          $movement={penguinTwoMovement}
+          src={penguin2}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+        <S.PenguinThree
+          $movement={penguinThreeMovement}
+          src={penguin3}
+          width={1500}
+          height={1000}
+          alt='Hero Image'
+          layout='responsive'
+        />
+      </S.Container>
+    </>
   );
 };

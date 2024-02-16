@@ -54,7 +54,7 @@ export const MainSkills = (): ReactElement => {
   }, [birdTwoMovement]);
 
   return (
-    <S.Container>
+    <S.Container id='skills'>
       <S.BirdTwo
         $movement={birdTwoMovement}
         src={bird2}

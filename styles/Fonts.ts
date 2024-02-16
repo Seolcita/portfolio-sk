@@ -3,6 +3,7 @@ import {
   Titillium_Web,
   Dancing_Script,
   Lilita_One,
+  Shrikhand,
 } from 'next/font/google';
 
 export const roboto = Roboto({
@@ -17,10 +18,15 @@ export const titillium = Titillium_Web({
 
 export const dancingScript = Dancing_Script({
   subsets: ['latin'],
-  weight: '400',
+  weight: '700',
 });
 
 export const lilita = Lilita_One({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+export const shrikhand = Shrikhand({
   subsets: ['latin'],
   weight: '400',
 });

@@ -10,6 +10,7 @@ import { Projects } from '../projects/projects';
 import { Experience } from '../experience/experience';
 import { Contact } from '../contact/contact';
 import * as S from './main.styles';
+import { NavBar } from '../../atomic/nav/nav';
 
 export const Main = (): ReactElement => {
   return (

@@ -44,7 +44,7 @@ export const About = (): ReactElement => {
   }, []);
 
   return (
-    <S.Container>
+    <S.Container id='about'>
       <S.PenguinOne
         $movement={penguinOneMovement}
         src={penguin1}

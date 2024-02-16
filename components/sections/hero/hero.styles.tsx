@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { Center } from '../../common/flex.styles';
 import { MoveImageProps } from './hero';
@@ -25,13 +25,33 @@ export interface ImageProps {
   $movement?: MoveImageProps;
 }
 
+export const TitleBox = styled(Center)`
+  position: absolute;
+  top: 40%;
+  left: 15%;
+
+  flex-direction: column;
+  margin-bottom: -10rem;
+`;
+
+export const Title = styled.h1`
+  z-index: 5;
+  margin: 1rem;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #153d4f;
+`;
+
 export const Background = styled(Image)<ImageProps>``;
+
 export const Whale = styled(Image)<ImageProps>`
   margin-top: ${({ $movement }) => $movement?.top}rem;
   margin-left: -${({ $movement }) => $movement?.left}rem;
   transform: rotate(${({ $movement }) => $movement?.rotate}deg)
     translateZ(${({ $movement }) => $movement?.zAxis}rem) scale(0.8);
+  z-index: 10;
 `;
+
 export const BirdOne = styled(Image)<ImageProps>`
   ${({ $movement }) =>
     $movement &&

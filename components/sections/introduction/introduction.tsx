@@ -64,15 +64,7 @@ export const Intorduction = (): ReactElement => {
   }, []);
 
   return (
-    <S.Container>
-      {/* <S.Whale
-        $movement={whaleMovement}
-        src={whale}
-        width={800}
-        height={600}
-        alt='Hero Image'
-      /> */}
-
+    <S.Container id='intro'>
       <Image
         src={ProfilePhoto}
         alt='Seol Hi portfolio image'
@@ -96,6 +88,7 @@ export const Intorduction = (): ReactElement => {
           variant='headingM'
           margin={['none', 'none', 'lg', 'none']}
           fontWeight='bold'
+          color='primary'
         >
           Seol Hi Kim
         </Typography>
@@ -119,7 +112,7 @@ export const Intorduction = (): ReactElement => {
             textColor='white'
             size='m'
             ariaLabel='Resume button'
-            bgColor='black'
+            bgColor='primary'
             fullWidth
           >
             Resume
