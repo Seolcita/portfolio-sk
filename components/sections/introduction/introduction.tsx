@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement } from 'react';
 import { Box } from '@mui/material';
 import Image from 'next/image';
 
@@ -7,7 +7,6 @@ import ProfilePhoto from '../../../public/assets/seolhikim.png';
 import { Typography, Button } from 'sk-storybook';
 import { Span } from '../../common/span.styles';
 import * as S from './introduction.styles';
-import { MoveImageProps } from '../hero/hero';
 
 interface ImageSize {
   width: number;
@@ -15,8 +14,6 @@ interface ImageSize {
 }
 
 export const Intorduction = (): ReactElement => {
-  const [whaleMovement, setWhaleMovement] = useState<MoveImageProps>();
-
   const { deviceType } = useWindowSize();
   const isMobile = deviceType === DeviceType.MOBILE;
   const isTablet = deviceType === DeviceType.TABLET;
@@ -42,24 +39,6 @@ export const Intorduction = (): ReactElement => {
       height: 400,
     };
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let scroll = Math.ceil(window.scrollY);
-      setWhaleMovement({
-        top: scroll * -0.1,
-        left: scroll * 0.2,
-        zAxis: scroll * -0.05,
-        rotate: scroll * -0.5,
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <S.Container>

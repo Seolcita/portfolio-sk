@@ -1,9 +1,8 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement } from 'react';
 
 import * as S from './skills.styles';
 import { Typography } from 'sk-storybook';
 import { TurningBox } from '../../atomic/turning-box/turning-box';
-import { MoveImageProps } from '../hero/hero';
 
 const jsUrl = '/assets/stack-logos/js.svg';
 const tsUrl = '/assets/stack-logos/ts.svg';
