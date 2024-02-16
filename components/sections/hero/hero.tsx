@@ -1,8 +1,10 @@
 'use client';
 
 import { ReactElement, useEffect, useState } from 'react';
+
+import { dancingScript } from '../../../styles/Fonts';
+import { NavBar } from '../navBar/nav-bar';
 import * as S from './hero.styles';
-import Image from 'next/image';
 
 const background = '/assets/hero/bg.png';
 const whale = '/assets/hero/whale.png';
@@ -71,7 +73,14 @@ export const Hero = (): ReactElement => {
   }, []);
 
   return (
-    <S.Container>
+    <S.Container id='hero'>
+      <NavBar />
+      <S.TitleBox className={dancingScript.className}>
+        <S.Title>Imagenation</S.Title>
+        <S.Title>Into </S.Title>
+        <S.Title>Reality</S.Title>
+      </S.TitleBox>
+
       <S.Background
         $movement={backgroundMovement}
         src={background}

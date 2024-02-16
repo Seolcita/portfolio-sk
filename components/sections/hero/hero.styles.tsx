@@ -26,6 +26,7 @@ export interface ImageProps {
 }
 
 export const Background = styled(Image)<ImageProps>``;
+
 export const Whale = styled(Image)<ImageProps>`
   margin-top: ${({ $movement }) => $movement?.top}rem;
   margin-left: -${({ $movement }) => $movement?.left}rem;
@@ -92,4 +93,20 @@ export const PenguinThree = styled(Image)<ImageProps>`
     $movement.zAxis &&
     `transform: translateZ(${$movement.zAxis}rem);
   `}
+`;
+
+export const TitleBox = styled(Center)`
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  flex-direction: column;
+  margin-bottom: -10rem;
+`;
+
+export const Title = styled.h1`
+  z-index: 5;
+  margin: 1rem;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #153d4f;
 `;

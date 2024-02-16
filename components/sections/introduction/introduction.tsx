@@ -41,7 +41,7 @@ export const Intorduction = (): ReactElement => {
   }
 
   return (
-    <S.Container>
+    <S.Container id='intro'>
       <Image
         src={ProfilePhoto}
         alt='Seol Hi portfolio image'

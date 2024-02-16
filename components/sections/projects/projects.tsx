@@ -20,7 +20,7 @@ export const Projects = (): ReactElement => {
   };
 
   return (
-    <S.Container>
+    <S.Container id='projects'>
       <Typography variant='headingM' fontWeight='bold'>
         Projects
       </Typography>

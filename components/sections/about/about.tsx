@@ -5,7 +5,7 @@ import * as S from './about.styles';
 
 export const About = (): ReactElement => {
   return (
-    <S.Container>
+    <S.Container id='about'>
       <Typography variant='headingM' fontWeight='bold'>
         About me
       </Typography>

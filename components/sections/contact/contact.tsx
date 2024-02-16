@@ -7,7 +7,7 @@ import * as S from './contact.styles';
 
 export const Contact = (): ReactElement => {
   return (
-    <S.Container>
+    <S.Container id='contact'>
       <Typography variant='headingM' fontWeight='bold'>
         Contact
       </Typography>
