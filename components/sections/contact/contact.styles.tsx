@@ -4,8 +4,6 @@ import { Center } from '../../common/flex.styles';
 import { device } from '../../../styles/Breakpoints';
 
 export const Container = styled(Center)`
-  background-color: grey;
-
   flex-direction: column;
 
   @media ${device.xs} {
@@ -27,7 +25,7 @@ export const Container = styled(Center)`
     justify-content: center;
     max-width: 150rem;
     width: 70%;
-    padding: 10rem 0;
+    padding: 0 0 10rem 0;
   }
 
   @media ${device.lg} {

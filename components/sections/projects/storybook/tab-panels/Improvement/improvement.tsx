@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 
 import * as S from '../../../chillyDog/tab-panels/challenges/challenges.styles';
 import { TitleBox } from '../../../../../atomic/title-box/title-box';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const ImprovementStorybook = (): ReactElement => {
   return (

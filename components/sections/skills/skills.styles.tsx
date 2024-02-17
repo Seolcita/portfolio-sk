@@ -25,7 +25,7 @@ export const Container = styled(Center)`
     justify-content: center;
     max-width: 150rem;
     width: 70%;
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 
   @media ${device.lg} {

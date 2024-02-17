@@ -1,7 +1,6 @@
 import { ReactElement, useState } from 'react';
 
 import * as S from './projects.styles';
-import { Typography } from 'sk-storybook';
 import { Box, Button } from '@mui/material';
 import AutorenewIcon from '@mui/icons-material/Autorenew';
 
@@ -9,6 +8,7 @@ import { ChillyDogTabs } from './chillyDog/tabs/tabs';
 import { StorybookTabs } from './storybook/tabs/tabs';
 
 import { ProjectCards } from './project-cards';
+import Typography from '../../atomic/Typography/Typography';
 
 export const Projects = (): ReactElement => {
   const [toggleProject, setToggleProject] = useState(true);
@@ -21,7 +21,7 @@ export const Projects = (): ReactElement => {
 
   return (
     <S.Container id='projects'>
-      <Typography variant='headingM' fontWeight='bold'>
+      <Typography variant='headingL' fontWeight='medium'>
         Projects
       </Typography>
 

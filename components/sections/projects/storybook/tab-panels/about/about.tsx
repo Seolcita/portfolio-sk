@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
@@ -9,7 +8,8 @@ import {
   DeviceType,
   useWindowSize,
 } from '../../../../../../hooks/use-window-resize';
-import { Box, Button, IconButton } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const AboutStorybook = (): ReactElement => {
   const { deviceType } = useWindowSize();

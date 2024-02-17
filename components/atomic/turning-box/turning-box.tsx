@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import * as S from './turning-box.styles';
-import { Typography } from 'sk-storybook';
+import Typography from '../Typography/Typography';
 
 interface TurningBoxProps {
   imageUrl: string;

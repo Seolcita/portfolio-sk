@@ -1,10 +1,11 @@
 import { ReactElement } from 'react';
 
-import { Card, Typography } from 'sk-storybook';
+import { Card } from 'sk-storybook';
 import * as S from './experience.styles';
 import Image from 'next/image';
 
 import NeoLogo from '../../../public/assets/neoLogo.png';
+import Typography from '../../atomic/Typography/Typography';
 
 const tsUrl = '/assets/stack-logos/ts.svg';
 const reactUrl = '/assets/stack-logos/react.png';
@@ -29,7 +30,7 @@ const stackLogos = [
 export const Experience = (): ReactElement => {
   return (
     <S.Container id='experience'>
-      <Typography variant='headingM' fontWeight='bold'>
+      <Typography variant='headingL' fontWeight='medium'>
         Experience
       </Typography>
 

@@ -1,14 +1,25 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from './usecase.styles';
+import Typography from '../../../../../atomic/Typography/Typography';
+import {
+  DeviceType,
+  useWindowSize,
+} from '../../../../../../hooks/use-window-resize';
 
 export const UseCaseChillyDog = (): ReactElement => {
+  const { deviceType } = useWindowSize();
+  const isMobile = deviceType === DeviceType.MOBILE;
+
   return (
     <S.Container>
       {/* Create First Dog Profile */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Creating First Dog Profile
       </Typography>
       <S.ImageContainer>
@@ -23,7 +34,11 @@ export const UseCaseChillyDog = (): ReactElement => {
       </S.ImageContainer>
 
       {/* Resume Creating Dog Profile */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Resuming Creating Dog Profile
       </Typography>
       <S.ImageContainer>
@@ -38,7 +53,11 @@ export const UseCaseChillyDog = (): ReactElement => {
       </S.ImageContainer>
 
       {/* Skip Location */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Skipping Location - when user has location
       </Typography>
       <S.ImageContainer>
@@ -53,7 +72,11 @@ export const UseCaseChillyDog = (): ReactElement => {
       </S.ImageContainer>
 
       {/* Throw  httpException*/}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Throw httpException
       </Typography>
       <S.ImageContainer>

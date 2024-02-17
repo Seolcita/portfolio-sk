@@ -3,7 +3,6 @@
 import { ReactElement, useEffect, useState } from 'react';
 
 import { dancingScript } from '../../../styles/Fonts';
-import { NavBar } from '../navBar/nav-bar';
 import * as S from './hero.styles';
 
 const background = '/assets/hero/bg.png';

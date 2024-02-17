@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from './title-box.styles';
+import Typography from '../Typography/Typography';
 
 interface TitleBoxProps {
   title: string;

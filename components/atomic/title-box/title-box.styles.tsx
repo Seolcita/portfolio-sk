@@ -9,7 +9,7 @@ interface ContainerProps {
 export const Container = styled(Center)<ContainerProps>`
   width: 100%;
   padding: 1rem;
-  background-color: ${({ $bgColor }) => $bgColor || 'black'};
+  background-color: ${({ $bgColor }) => $bgColor || '#153d4f'};
   justify-content: start;
   border-radius: 0.5rem;
 `;
