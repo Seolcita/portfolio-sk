@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Center } from '../../common/flex.styles';
 import { MoveImageProps } from './hero';
 import Image from 'next/image';
+import { device } from '../../../styles/Breakpoints';
 
 export const Container = styled(Center)`
   background-color: white;
@@ -106,7 +107,18 @@ export const TitleBox = styled(Center)`
 export const Title = styled.h1`
   z-index: 5;
   margin: 1rem;
-  font-size: 8rem;
   font-weight: 700;
   color: #153d4f;
+
+  @media ${device.xs} {
+    font-size: 4rem;
+  }
+
+  @media ${device.sm} {
+    font-size: 5rem;
+  }
+
+  @media ${device.md} {
+    font-size: 7rem;
+  }
 `;
