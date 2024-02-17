@@ -74,9 +74,8 @@ export const Hero = (): ReactElement => {
 
   return (
     <S.Container id='hero'>
-      <NavBar />
       <S.TitleBox className={dancingScript.className}>
-        <S.Title>Imagenation</S.Title>
+        <S.Title>Imagination</S.Title>
         <S.Title>Into </S.Title>
         <S.Title>Reality</S.Title>
       </S.TitleBox>
