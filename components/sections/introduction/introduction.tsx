@@ -4,9 +4,10 @@ import Image from 'next/image';
 
 import { DeviceType, useWindowSize } from '../../../hooks/use-window-resize';
 import ProfilePhoto from '../../../public/assets/seolhikim.png';
-import { Typography, Button } from 'sk-storybook';
+import { Button } from 'sk-storybook';
 import { Span } from '../../common/span.styles';
 import * as S from './introduction.styles';
+import Typography from '../../atomic/Typography/Typography';
 
 interface ImageSize {
   width: number;
@@ -57,14 +58,14 @@ export const Intorduction = (): ReactElement => {
         <Typography
           variant='textM'
           margin={['none', 'none', 'lg', 'none']}
-          fontWeight='bold'
+          fontWeight='medium'
         >
           Hello! I'm
         </Typography>
         <Typography
           variant='headingM'
           margin={['none', 'none', 'lg', 'none']}
-          fontWeight='bold'
+          fontWeight='medium'
         >
           Seol Hi Kim
         </Typography>

@@ -1,17 +1,14 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
-import Image from 'next/image';
 
-import * as S from './accessibility.styles';
-import { lilita } from '../../../../../../styles/Fonts';
 import {
   DeviceType,
   useWindowSize,
 } from '../../../../../../hooks/use-window-resize';
+import * as S from './accessibility.styles';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const AccessibilityChillyDog = (): ReactElement => {
   const { deviceType } = useWindowSize();
-
   const isMobile = deviceType === DeviceType.MOBILE;
 
   return (
@@ -19,7 +16,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Main Page */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'lg']}
         >
@@ -36,7 +33,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Alert */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'lg']}
         >
@@ -52,7 +49,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Create First Dog Profile */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'lg']}
         >
@@ -68,7 +65,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Dog Profile */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'lg']}
         >
@@ -85,7 +82,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* User Profile */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'none']}
         >
@@ -102,7 +99,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Toast Message */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'none']}
         >
@@ -119,7 +116,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Location */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'none']}
         >
@@ -136,7 +133,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
       {/* Logout */}
       <S.VideoContainer>
         <Typography
-          variant='headingXS'
+          variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
           margin={['xl', 'none', 'none']}
         >

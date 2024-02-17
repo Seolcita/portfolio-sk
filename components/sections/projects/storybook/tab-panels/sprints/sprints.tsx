@@ -1,13 +1,17 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from '../../../chillyDog/tab-panels/sprints/sprints.styles';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const SprintsStorybook = (): ReactElement => {
   return (
     <S.Container>
-      <Typography variant='headingXS' margin={['lg', 'none', 'none']}>
+      <Typography
+        variant='headingXS'
+        fontWeight='bold'
+        margin={['lg', 'none', 'none']}
+      >
         This project is on going. The timeline is not fixed.
       </Typography>
       <Typography variant='textXS' margin={['none', 'none', 'lg']}>

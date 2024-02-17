@@ -30,7 +30,7 @@ export const Container = styled(Center)`
     justify-content: center;
     max-width: 150rem;
     width: 70%;
-    padding: 20rem 0;
+    padding: 20rem 0 10rem;
   }
 
   @media ${device.lg} {

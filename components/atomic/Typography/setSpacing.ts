@@ -1,0 +1,20 @@
+import { Space, space } from './space-token';
+
+export type Spacing = keyof Space;
+export type setSpaceInput = Spacing[] | Spacing;
+
+export const setSpacing = (spacing: setSpaceInput): string => {
+  let spacingInput: Spacing[];
+
+  if (Array.isArray(spacing)) {
+    spacingInput = spacing;
+  } else {
+    spacingInput = [spacing];
+  }
+
+  const formattedSpacing = spacingInput
+    .map((spaceKey) => space[spaceKey])
+    .join(' ');
+
+  return formattedSpacing;
+};

@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import { lilita } from '../../../../../../styles/Fonts';
@@ -8,6 +7,7 @@ import {
   DeviceType,
   useWindowSize,
 } from '../../../../../../hooks/use-window-resize';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const AboutChillyDog = (): ReactElement => {
   const { deviceType } = useWindowSize();

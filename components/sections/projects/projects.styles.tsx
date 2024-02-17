@@ -22,6 +22,7 @@ export const Container = styled(Center)`
   @media ${device.md} {
     max-width: 150rem;
     width: 70%;
+    padding: 0 0 10rem 0;
   }
 
   @media ${device.lg} {

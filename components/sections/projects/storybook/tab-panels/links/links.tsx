@@ -1,9 +1,9 @@
 import { ReactElement } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from '../../../chillyDog/tab-panels/links/links.styles';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const LinksStorybook = (): ReactElement => {
   return (

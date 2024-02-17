@@ -52,7 +52,7 @@ export const StorybookTabs = (): ReactElement => {
       <TabPanel value={value} index={2}>
         <PlanningStorybook />
       </TabPanel>
-      <TabPanel value={value} index={32}>
+      <TabPanel value={value} index={3}>
         <SprintsStorybook />
       </TabPanel>
       <TabPanel value={value} index={4}>

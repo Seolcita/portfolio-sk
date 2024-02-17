@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 
 import * as S from './link-item.styles';
 import Image from 'next/image';
+import Typography from '../Typography/Typography';
 
 interface LinkItemProps {
   href: string;

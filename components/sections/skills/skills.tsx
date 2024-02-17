@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 
 import * as S from './skills.styles';
-import { Typography } from 'sk-storybook';
 import { TurningBox } from '../../atomic/turning-box/turning-box';
+import Typography from '../../atomic/Typography/Typography';
 
 const jsUrl = '/assets/stack-logos/js.svg';
 const tsUrl = '/assets/stack-logos/ts.svg';
@@ -20,7 +20,7 @@ const mongodbUrl = '/assets/stack-logos/mongodb.svg';
 export const MainSkills = (): ReactElement => {
   return (
     <S.Container id='skills'>
-      <Typography variant='headingM' fontWeight='bold'>
+      <Typography variant='headingL' fontWeight='medium'>
         Skills
       </Typography>
 

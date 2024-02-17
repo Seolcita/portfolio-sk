@@ -1,12 +1,12 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
-import { Typography } from 'sk-storybook';
 import * as S from './about.styles';
+import Typography from '../../atomic/Typography/Typography';
 
 export const About = (): ReactElement => {
   return (
     <S.Container id='about'>
-      <Typography variant='headingM' fontWeight='bold'>
+      <Typography variant='headingL' fontWeight='medium'>
         About me
       </Typography>
       <S.TextContainer>

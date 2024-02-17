@@ -1,14 +1,14 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from './sprints.styles';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const SprintsChillyDog = (): ReactElement => {
   return (
     <S.Container>
       {/* Sprints */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography variant='headingS' fontWeight='bold' margin={['lg', 'none']}>
         Sprints
       </Typography>
       <S.ImageContainer>
@@ -24,7 +24,7 @@ export const SprintsChillyDog = (): ReactElement => {
 
       {/* Sprint 1 */}
       <Typography
-        variant='headingXS'
+        variant='headingS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
@@ -44,7 +44,7 @@ export const SprintsChillyDog = (): ReactElement => {
 
       {/* Sprint 2 */}
       <Typography
-        variant='headingXS'
+        variant='headingS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
@@ -64,7 +64,7 @@ export const SprintsChillyDog = (): ReactElement => {
 
       {/* Sprint 3 */}
       <Typography
-        variant='textXL'
+        variant='headingS'
         fontWeight='bold'
         margin={['lg', 'none', 'none']}
       >
@@ -85,7 +85,7 @@ export const SprintsChillyDog = (): ReactElement => {
       </S.ImageContainer>
 
       {/* Maintenance  */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography variant='headingS' fontWeight='bold' margin={['lg', 'none']}>
         Maintenance
       </Typography>
       <S.ImageContainer>
@@ -100,7 +100,7 @@ export const SprintsChillyDog = (): ReactElement => {
       </S.ImageContainer>
 
       {/* Bugs */}
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography variant='headingS' fontWeight='bold' margin={['lg', 'none']}>
         Bugs
       </Typography>
       <S.ImageContainer>

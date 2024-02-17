@@ -1,13 +1,24 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import Image from 'next/image';
 
 import * as S from './flows.styles';
+import {
+  DeviceType,
+  useWindowSize,
+} from '../../../../../../hooks/use-window-resize';
+import Typography from '../../../../../atomic/Typography/Typography';
 
 export const FlowChillyDog = (): ReactElement => {
+  const { deviceType } = useWindowSize();
+  const isMobile = deviceType === DeviceType.MOBILE;
+
   return (
     <S.Container>
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Creating First Dog Profile
       </Typography>
       <S.ImageContainer>
@@ -21,7 +32,11 @@ export const FlowChillyDog = (): ReactElement => {
         />
       </S.ImageContainer>
 
-      <Typography variant='headingXS' fontWeight='bold' margin={['lg', 'none']}>
+      <Typography
+        variant={isMobile ? 'headingXS' : 'headingS'}
+        fontWeight='bold'
+        margin={['lg', 'none']}
+      >
         Resuming Creating Dog Profile
       </Typography>
       <S.ImageContainer>

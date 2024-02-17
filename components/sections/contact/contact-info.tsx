@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Typography } from 'sk-storybook';
 import { Box, IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -11,6 +10,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
 import * as S from './contact.styles';
+import Typography from '../../atomic/Typography/Typography';
 
 export const ContactInfo = (): ReactElement => {
   return (
