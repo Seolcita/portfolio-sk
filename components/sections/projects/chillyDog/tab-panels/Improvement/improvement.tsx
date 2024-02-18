@@ -22,7 +22,7 @@ export const ImprovementChillyDog = (): ReactElement => {
           potentially degraded the user experience due to increased latency. For
           future iterations, it would be beneficial to explore more efficient
           session persistence strategies. One potential method could involve
-          caching the user's progress locally on the client side and only
+          caching the user&apos;s progress locally on the client side and only
           sending a comprehensive data packet to the backend upon completion of
           the profile creation or at certain checkpoints. This would
           significantly reduce the number of API calls, ensuring a smoother user
