@@ -9,12 +9,10 @@ export const Contact = (): ReactElement => {
   return (
     <S.Container id='contact'>
       <Typography variant='headingL' fontWeight='medium'>
-        Contact
+        Let's get in touch!
       </Typography>
-      <S.Contents>
-        <ContactInfo />
-        <ContactForm />
-      </S.Contents>
+      <ContactInfo />
+      <ContactForm />
     </S.Container>
   );
 };

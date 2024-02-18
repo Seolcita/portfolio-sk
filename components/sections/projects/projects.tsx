@@ -1,14 +1,12 @@
 import { ReactElement, useState } from 'react';
-
-import * as S from './projects.styles';
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import AutorenewIcon from '@mui/icons-material/Autorenew';
 
+import Typography from '../../atomic/Typography/Typography';
 import { ChillyDogTabs } from './chillyDog/tabs/tabs';
 import { StorybookTabs } from './storybook/tabs/tabs';
-
 import { ProjectCards } from './project-cards';
-import Typography from '../../atomic/Typography/Typography';
+import * as S from './projects.styles';
 
 export const Projects = (): ReactElement => {
   const [toggleProject, setToggleProject] = useState(true);
@@ -28,24 +26,16 @@ export const Projects = (): ReactElement => {
       <ProjectCards />
 
       <S.ButtonContainer>
-        <Button
-          variant='contained'
-          onClick={handleOnClick}
-          sx={{ padding: '1rem 2rem' }}
-        >
+        <S.CompleteButton onClick={handleOnClick} aria-label='Complete Profile'>
           <AutorenewIcon fontSize='large' />
-          <Typography variant='textXS' color='white' margin={['none', 'md']}>
+          <Typography variant='textS' color='white' margin={['none', 'md']}>
             Switch to
           </Typography>
-          <Typography variant='textM' color='white' fontWeight='bold'>
+          <Typography variant='textM' color='white' fontWeight='medium'>
             &nbsp;{projectTitle}&nbsp;&nbsp;
           </Typography>
-          <Typography variant='textXS' color='white'>
-            Detail
-          </Typography>
-        </Button>
+        </S.CompleteButton>
       </S.ButtonContainer>
-
       <Box width={'100%'} bgcolor={'white'} borderRadius={'0.75rem'}>
         {toggleProject && <ChillyDogTabs />}
         {!toggleProject && <StorybookTabs />}

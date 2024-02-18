@@ -24,59 +24,128 @@ export const Container = styled(Center)`
     align-items: center;
     justify-content: center;
     max-width: 150rem;
-    width: 70%;
+    width: 50%;
     padding: 0 0 10rem 0;
   }
 
   @media ${device.lg} {
-    width: 65%;
+    width: 40%;
   }
-`;
-
-export const Contents = styled(Center)`
-  width: 100%;
-  height: 40rem;
-  padding: 3rem;
-
-  @media ${device.xs} {
-    flex-direction: column;
-    gap: 3rem;
-  }
-`;
-
-export const LeftContainer = styled(Center)`
-  height: 100%;
-  width: 100%;
-`;
-
-export const RightContainer = styled(Center)`
-  height: 100%;
-  width: 100%;
 `;
 
 export const Card = styled(Center)`
   flex-direction: column;
-  justify-content: space-around;
-  gap: 1rem;
-
-  padding: 2rem 3rem;
-
-  height: 100%;
+  margin: 8rem 0 4rem;
+  padding: 1rem 0;
   width: 100%;
+  height: 100%;
 `;
 
 export const Item = styled(Center)`
   gap: 1rem;
 `;
 
-export const IconsContainer = styled(Center)`
-  flex-direction: row;
-  gap: 1rem;
-  // margin-top: 2rem;
-`;
-
-export const Form = styled.form`
+export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 40rem;
+  margin-top: 1rem;
+`;
+
+interface ButtonProps {
+  disabled?: boolean;
+}
+
+export const Button = styled.button<ButtonProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+
+  background: ${({ disabled }) => (disabled ? 'grey' : '#153d4f')};
+  color: #f1f1f1;
+  border: none;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  transition: 0.3s;
+
+  overflow: hidden;
+
+  &:before {
+    ${({ disabled }) => disabled && 'opacity:0'}
+    content: 'Thank you!';
+    color: white;
+    background-color: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+  }
+
+  &:hover:before {
+    transform: translateY(0);
+  }
+`;
+
+export const IconsContainer = styled(Center)`
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+`;
+
+export const Anchor = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  color: #10ac84;
+  box-shadow: 0 0.5rem 1.5rem -0.5rem #00000070;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #0a3d62;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    z-index: 1000;
+  }
+
+  &:hover::before {
+    animation: animation 0.7s 1 forwards;
+  }
+
+  @keyframes animation {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 15%;
+      top: -30%;
+    }
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+  }
 `;

@@ -6,6 +6,6 @@ export interface SpanProps {
 }
 
 export const Span = styled.span<SpanProps>`
-  color: ${({ color }) => color ?? 'black'};
+  color: ${({ color }) => color ?? '#153d4f'};
   font-weight: ${({ $fontWeight }) => $fontWeight ?? 400};
 `;
