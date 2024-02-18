@@ -35,7 +35,7 @@ export const Container = styled(Center)`
 
 export const Card = styled(Center)`
   flex-direction: column;
-  margin: 8rem 0 4rem;
+  margin: 4rem 0;
   padding: 1rem 0;
   width: 100%;
   height: 100%;
@@ -43,14 +43,6 @@ export const Card = styled(Center)`
 
 export const Item = styled(Center)`
   gap: 1rem;
-`;
-
-export const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 40rem;
-  margin-top: 1rem;
 `;
 
 interface ButtonProps {
@@ -108,8 +100,8 @@ export const Anchor = styled.a`
   justify-content: center;
   align-items: center;
 
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   background: #f1f1f1;
   margin: 10px;
   border-radius: 30%;
