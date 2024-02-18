@@ -34,9 +34,57 @@ export const ButtonContainer = styled(Center)`
   flex-direction: row;
   justify-content: start;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   @media ${device.xs} {
     margin-left: 4rem;
   }
 `;
+
+export const CompleteButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: relative;
+  background-color: #153d4f;
+  color: white;
+  width: 23rem;
+
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: -0.5rem;
+    left: -0.5rem;
+    border-top: 0.2rem solid #153d4f;
+    border-left: 0.2rem solid #153d4f;
+    transition: all 0.25s;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    border-bottom: 0.2rem solid #153d4f;
+    border-right: 0.2rem solid #153d4f;
+    transition: all 0.25s;
+  }
+
+  &:hover:before,
+  &:hover:after,
+  &:focus:before,
+  &:focus:after {
+    height: 100%;
+    width: 100%;
+  }
+`;
+

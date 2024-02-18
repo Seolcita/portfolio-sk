@@ -47,3 +47,62 @@ export const TextContainer = styled.div`
     padding-left: 6rem;
   }
 `;
+
+export const Anchor = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+  color: #153d4f;
+  letter-spacing: 3px;
+  border: 0.4rem solid #153d4f;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 15rem;
+  cursor: pointer;
+
+  &:hover {
+    div {
+      top: 0;
+    }
+  }
+`;
+
+export const Wave = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: #00aeff;
+  transition: all 1s;
+  z-index: -1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2.2rem;
+    left: 0;
+    width: 100%;
+    height: 2.2rem;
+    background-image: url('/assets/wave.png');
+    animation: wavy 0.5s linear infinite;
+  }
+
+  @keyframes wavy {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 118px;
+    }
+  }
+`;

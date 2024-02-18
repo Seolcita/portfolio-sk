@@ -75,26 +75,19 @@ export const Intorduction = (): ReactElement => {
         </Typography>
         <Typography variant='textL' margin={['lg', 'none', 'none', 'none']}>
           I approach every project with
-          <Span $fontWeight={700}> keen interest</Span> to processes and best
+          <Span $fontWeight={600}> keen interest</Span> to processes and best
           practices. My focus is delivering
-          <Span $fontWeight={700}> excellent solutions</Span> on time, according
+          <Span $fontWeight={600}> excellent solutions</Span> on time, according
           to the project priorities. Once a project is done, my mind is always
-          looking for ways to <Span $fontWeight={700}> improve myself</Span> and
-          <Span $fontWeight={700}> next projects</Span>.
+          looking for ways to <Span $fontWeight={600}> improve myself</Span> and
+          <Span $fontWeight={600}> next projects</Span>.
         </Typography>
 
         {/* TODO: Add resume link, change button style */}
-        <Box width={'15rem'} marginTop='3rem'>
-          <Button
-            textColor='white'
-            size='m'
-            ariaLabel='Resume button'
-            bgColor='black'
-            fullWidth
-          >
-            Resume
-          </Button>
-        </Box>
+        <S.Anchor>
+          Resume
+          <S.Wave />
+        </S.Anchor>
       </S.TextContainer>
     </S.Container>
   );
