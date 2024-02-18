@@ -36,14 +36,10 @@ export const LinkItem = styled(Center)`
   padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 0.5rem;
-  transition: background-color 0.5s;
+  transition: all 0.5s;
 
   &:hover {
-    background-color: #c7c8cc;
-  }
-
-  &:active {
-    background-color: #b4b4b8;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   }
 `;
 
