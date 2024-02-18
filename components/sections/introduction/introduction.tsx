@@ -1,13 +1,11 @@
 import { ReactElement } from 'react';
-import { Box } from '@mui/material';
 import Image from 'next/image';
 
 import { DeviceType, useWindowSize } from '../../../hooks/use-window-resize';
 import ProfilePhoto from '../../../public/assets/seolhikim.png';
-import { Button } from 'sk-storybook';
+import Typography from '../../atomic/Typography/Typography';
 import { Span } from '../../common/span.styles';
 import * as S from './introduction.styles';
-import Typography from '../../atomic/Typography/Typography';
 
 interface ImageSize {
   width: number;
@@ -60,7 +58,7 @@ export const Intorduction = (): ReactElement => {
           margin={['none', 'none', 'lg', 'none']}
           fontWeight='medium'
         >
-          Hello! I'm
+          {`Hello! I'm`}
         </Typography>
         <Typography
           variant='headingM'

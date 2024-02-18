@@ -18,7 +18,7 @@ export const ChallengesStorybook = (): ReactElement => {
           for styled-components and generating type definitions were
           particularly challenging. Despite these obstacles, this journey has
           broadened my understanding and skills in these areas. Turning these
-          initial challenges into opportunities, I've gained invaluable
+          initial challenges into opportunities, I&apos;ve gained invaluable
           knowledge.
         </Typography>
       </S.TopicContainer>

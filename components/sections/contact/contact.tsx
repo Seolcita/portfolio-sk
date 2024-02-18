@@ -8,7 +8,7 @@ export const Contact = (): ReactElement => {
   return (
     <S.Container id='contact'>
       <Typography variant='headingL' fontWeight='medium'>
-        Let's get in touch!
+        {`Let's get in touch!`}
       </Typography>
       <ContactInfo />
     </S.Container>

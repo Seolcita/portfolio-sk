@@ -60,6 +60,7 @@ export const Experience = (): ReactElement => {
                 {stackLogos.map((logo) => {
                   return (
                     <Image
+                      key={logo}
                       src={logo}
                       alt='stack logo'
                       width={30}

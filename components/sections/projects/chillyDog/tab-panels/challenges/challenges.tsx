@@ -39,7 +39,7 @@ export const ChallengesChillyDog = (): ReactElement => {
           innovative and highly adaptable stack. I learned a practical lesson in
           the adaptability required in software development. It underscored the
           significance of choosing the right technology stack that aligns with
-          the project's architectural needs and the agility needed to pivot
+          the project&apos;s architectural needs and the agility needed to pivot
           strategies when faced with unforeseen challenges.
         </Typography>
       </S.TopicContainer>

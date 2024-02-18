@@ -1,12 +1,12 @@
 import { ReactElement } from 'react';
 import Image from 'next/image';
 
-import { lilita } from '../../../../../../styles/Fonts';
 import * as S from './about.styles';
 import {
   DeviceType,
   useWindowSize,
 } from '../../../../../../hooks/use-window-resize';
+import { lilita } from '../../../../../../styles/Fonts';
 import Typography from '../../../../../atomic/Typography/Typography';
 
 export const AboutChillyDog = (): ReactElement => {
@@ -37,10 +37,10 @@ export const AboutChillyDog = (): ReactElement => {
       <Typography variant='textM' margin={['lg', 'none', 'none']}>
         Chilly Dog is an intuitive application that presents real-time weather
         updates and offers personalized guidance on whether the weather
-        conditions are suitable for a user's dog, taking into account the
-        specific details from the dog's profile. Additionally, it showcases the
-        progress of dog profiles being created. The application is designed with
-        accessibility in mind, ensuring ease of use for all users.
+        conditions are suitable for a user&apos;s dog, taking into account the
+        specific details from the dog&apos;s profile. Additionally, it showcases
+        the progress of dog profiles being created. The application is designed
+        with accessibility in mind, ensuring ease of use for all users.
       </Typography>
       <S.ImageContainer>
         <Image
@@ -71,8 +71,8 @@ export const AboutChillyDog = (): ReactElement => {
         website and set up a profile for their dog. To make the process
         engaging, a graphic of a pooping dog shows progress, with just 6 simple
         questions to complete the profile. If you find this too extensive,
-        there's no pressure - you can stop at any time and resume later without
-        losing your progress.
+        there&apos;s no pressure - you can stop at any time and resume later
+        without losing your progress.
       </Typography>
 
       <Typography
@@ -90,8 +90,8 @@ export const AboutChillyDog = (): ReactElement => {
         Current Weather Information + ‘How Cold Is Too Cold’ chart + Dog Profile
       </Typography>
       <Typography variant='textM'>
-        The application considers weather to be 'wet' under the following
-        conditions:
+        The application considers weather to be &apos;wet&apos; under the
+        following conditions:
       </Typography>
       <Typography variant='textM'>
         rain, snow, drizzle, thunderstorms, or when the humidity exceeds 60%.
