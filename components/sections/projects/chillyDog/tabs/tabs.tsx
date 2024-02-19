@@ -34,8 +34,9 @@ export const ChillyDogTabs = (): ReactElement => {
           value={value}
           onChange={handleChange}
           variant='scrollable'
-          scrollButtons='auto'
-          aria-label='basic tabs example'
+          aria-label='Chilly Dog Tabs'
+          scrollButtons
+          allowScrollButtonsMobile
         >
           <Tab label='About' {...a11yProps(0)} sx={customTabStyle} />
           <Tab label='Stack' {...a11yProps(1)} sx={customTabStyle} />

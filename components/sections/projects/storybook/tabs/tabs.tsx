@@ -31,8 +31,9 @@ export const StorybookTabs = (): ReactElement => {
           value={value}
           onChange={handleChange}
           variant='scrollable'
-          scrollButtons='auto'
-          aria-label='basic tabs example'
+          scrollButtons
+          allowScrollButtonsMobile
+          aria-label='storybook tabs'
         >
           <Tab label='About' {...a11yProps(0)} sx={customTabStyle} />
           <Tab label='Stack' {...a11yProps(1)} sx={customTabStyle} />
