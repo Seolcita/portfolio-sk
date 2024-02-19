@@ -6,7 +6,7 @@ import { dancingScript } from '../../../styles/Fonts';
 import * as S from './hero.styles';
 
 const background = '/assets/hero/bg.png';
-const whale = '/assets/hero/whale.png';
+const whale = '/assets/hero/whale.svg';
 const bird1 = '/assets/hero/bird1.png';
 const bird2 = '/assets/hero/bird2.png';
 const bird3 = '/assets/hero/bird3.png';
