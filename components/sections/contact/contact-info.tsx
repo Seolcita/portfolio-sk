@@ -23,7 +23,6 @@ export const StyledIcon = styled(
   z-index: 1100;
 
   &:hover {
-    transform: scale(0.8);
     color: #f1f1f1;
   }
 `;
@@ -45,22 +44,15 @@ export const ContactInfo = (): ReactElement => {
             <StyledIcon icon={GitHubIcon} />
           </S.Anchor>
         </Tooltip>
-        <Tooltip title='Study Note' TransitionComponent={Zoom} arrow>
+        {/* TODO: Once Study note is published, release it */}
+        {/* <Tooltip title='Study Note' TransitionComponent={Zoom} arrow>
           <S.Anchor
             href='https://www.notion.so/7e4673784848475e905ec1e017288b84?v=4e672e3431d3465a910e3655e96adc0d'
             target='_blank'
           >
             <StyledIcon icon={ArticleIcon} />
           </S.Anchor>
-        </Tooltip>
-        <Tooltip title='Project Manamenet' TransitionComponent={Zoom} arrow>
-          <S.Anchor
-            href='https://www.notion.so/8c2bc421a6dc4ffc92203789e1c71c21?v=d4f9eeb6ee7741f58036a7babc2a140f'
-            target='_blank'
-          >
-            <StyledIcon icon={ListAltIcon} />
-          </S.Anchor>
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip title='Instagram' TransitionComponent={Zoom} arrow>
           <S.Anchor href='https://www.instagram.com/sseori30' target='_blank'>
             <StyledIcon icon={InstagramIcon} />

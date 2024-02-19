@@ -82,7 +82,7 @@ export const Intorduction = (): ReactElement => {
         </Typography>
 
         {/* TODO: Add resume link, change button style */}
-        <S.Anchor>
+        <S.Anchor href='/assets/Resume.pdf' download target='_blank'>
           Resume
           <S.Wave />
         </S.Anchor>
