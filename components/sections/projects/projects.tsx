@@ -32,7 +32,7 @@ export const Projects = (): ReactElement => {
             Switch to
           </Typography>
           <Typography variant='textM' color='white' fontWeight='medium'>
-            &nbsp;{projectTitle}&nbsp;&nbsp;
+            &nbsp;{projectTitle}&nbsp;
           </Typography>
         </S.CompleteButton>
       </S.ButtonContainer>

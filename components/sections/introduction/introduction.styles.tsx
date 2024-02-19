@@ -70,6 +70,7 @@ export const Anchor = styled.a`
   cursor: pointer;
 
   &:hover {
+    color: #fff;
     div {
       top: 0;
     }
@@ -82,7 +83,7 @@ export const Wave = styled.div`
   height: 100%;
   left: 0;
   top: calc(100% + 22px);
-  background-color: #00aeff;
+  background-color: #153d4f;
   transition: all 1s;
   z-index: -1;
 

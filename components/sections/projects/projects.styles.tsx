@@ -11,7 +11,7 @@ export const Container = styled(Center)`
 
   @media ${device.xs} {
     max-width: 59rem;
-    padding: 0;
+    padding: 0 2rem;
   }
 
   @media ${device.sm} {
@@ -87,4 +87,3 @@ export const CompleteButton = styled.button`
     width: 100%;
   }
 `;
-
