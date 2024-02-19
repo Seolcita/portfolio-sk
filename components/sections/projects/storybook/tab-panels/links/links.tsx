@@ -12,7 +12,7 @@ export const LinksStorybook = (): ReactElement => {
         <a href='https://sk-storybook.vercel.app' target='_blank'>
           <S.LinkItem>
             <Image
-              src='/assets/logo.svg'
+              src='/assets/stack-logos/storybook.png'
               alt='Logo'
               width={25}
               height={25}
@@ -48,8 +48,8 @@ export const LinksStorybook = (): ReactElement => {
             <Image
               src='/assets/storybook/npm.svg'
               alt='notion'
-              width={25}
-              height={25}
+              width={22}
+              height={22}
               style={{
                 borderRadius: '50%',
               }}
@@ -65,7 +65,7 @@ export const LinksStorybook = (): ReactElement => {
         </a>
 
         <a
-          href='https://www.notion.so/ccf3d1001e304b7c848a08a88f756358?v=89e223e6293049c1930b2a900ab083da'
+          href='https://seolhikim-projects.notion.site/seolhikim-projects/ccf3d1001e304b7c848a08a88f756358?v=89e223e6293049c1930b2a900ab083da'
           target='_blank'
         >
           <S.LinkItem>
