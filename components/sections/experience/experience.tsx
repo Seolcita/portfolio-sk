@@ -53,7 +53,7 @@ export const Experience = (): ReactElement => {
                 Fullstack Developer
               </Typography>
               <Typography variant='textM'>
-                March 2021 - September 2022
+                March 2022 - September 2023
               </Typography>
 
               <S.StackContainer>
