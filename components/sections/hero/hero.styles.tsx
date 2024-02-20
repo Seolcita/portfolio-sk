@@ -98,10 +98,9 @@ export const PenguinThree = styled(Image)<ImageProps>`
 
 export const TitleBox = styled(Center)`
   position: absolute;
-  top: 40%;
+  top: 44%;
   left: 15%;
   flex-direction: column;
-  margin-bottom: -10rem;
 `;
 
 export const Title = styled.h1`
@@ -121,4 +120,11 @@ export const Title = styled.h1`
   @media ${device.md} {
     font-size: 7rem;
   }
+`;
+
+export const SubTitle = styled.h1`
+  z-index: 5;
+  margin: 1rem;
+  color: #153d4f;
+  font-size: 2.5rem;
 `;

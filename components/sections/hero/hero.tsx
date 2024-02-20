@@ -2,7 +2,7 @@
 
 import { ReactElement, useEffect, useState } from 'react';
 
-import { dancingScript } from '../../../styles/Fonts';
+import { dancingScript, quintessential } from '../../../styles/Fonts';
 import * as S from './hero.styles';
 
 const background = '/assets/hero/bg.png';
@@ -12,9 +12,9 @@ const bird2 = '/assets/hero/bird2.png';
 const bird3 = '/assets/hero/bird3.png';
 const birdsSmall = '/assets/hero/birdsSmall.png';
 const birdsLarge = '/assets/hero/birdsLarge.png';
-const penguin1 = '/assets/hero/penguin1.png';
-const penguin2 = '/assets/hero/penguin2.png';
-const penguin3 = '/assets/hero/penguin3.png';
+const penguin1 = '/assets/hero/penguin1.svg';
+const penguin2 = '/assets/hero/penguin2.svg';
+const penguin3 = '/assets/hero/penguin3.svg';
 
 export interface MoveImageProps {
   top?: number;
@@ -74,9 +74,11 @@ export const Hero = (): ReactElement => {
   return (
     <S.Container id='hero'>
       <S.TitleBox className={dancingScript.className}>
+        <S.SubTitle className={quintessential.className}>
+          <i>{`Seol Hi's portfolio`}</i>
+        </S.SubTitle>
         <S.Title>Imagination</S.Title>
-        <S.Title>Into </S.Title>
-        <S.Title>Reality</S.Title>
+        <S.Title>Into Reality</S.Title>
       </S.TitleBox>
 
       <S.Background

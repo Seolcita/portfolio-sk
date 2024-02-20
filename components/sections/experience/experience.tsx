@@ -98,12 +98,11 @@ export const Experience = (): ReactElement => {
           <Typography variant='textL'>
             My time at Neo Financial was marked by involvement in a variety of
             challenging projects, providing me with comprehensive experience
-            across the software development lifecycle, including planning,
-            development, deployment, and maintenance. This period was
-            instrumental in honing my expertise in TypeScript, React.js,
-            Next.js, Storybook, Material-UI, GraphQL, Express, MongoDB, AWS, and
-            GitHub, in addition to developing my communication and teamwork
-            abilities.
+            across the software development lifecycle, including development,
+            deployment, and maintenance. This period was instrumental in honing
+            my expertise in TypeScript, React.js, Next.js, Storybook, GraphQL,
+            Express, MongoDB, AWS, and GitHub, in addition to developing my
+            communication and teamwork abilities.
           </Typography>
         </S.Pharagraph>
 
@@ -114,7 +113,7 @@ export const Experience = (): ReactElement => {
           <Typography variant='textL'>
             A notable project was the Annual Reassessment project for investment
             product users, a compliance-driven project with a stringent
-            timeline.My responsibilities encompassed foundational work on both
+            timeline. My responsibilities encompassed foundational work on both
             the backend and frontend partially, presenting a formidable
             challenge that ultimately deepened my understanding of project
             management. This project highlighted the essence of teamwork and
@@ -131,9 +130,9 @@ export const Experience = (): ReactElement => {
             With the Frontend team, I enhanced application layouts using CSS
             Grid and contributed to the development of a new React component
             library and a VIPER architecture-based web application for business
-            owners. Additionally, I played a key role in the onboarding process
-            for new product launches, necessitating close cooperation with
-            various engineering teams.
+            owners. Additionally, I worked onboarding process for new product
+            launches, necessitating close cooperation with various engineering
+            teams.
           </Typography>
         </S.Pharagraph>
 
@@ -157,14 +156,13 @@ export const Experience = (): ReactElement => {
             at Neo Financial
           </Typography>
           <Typography variant='textL'>
-            In my role as an Intermediate Fullstack Developer at Neo Financial,
-            I was deeply involved in the development of cutting-edge financial
-            technology solutions. This position was not only a pivotal point in
-            my career but also a testament to my rapid professional growth, as I
-            was promoted from Junior to Intermediate Engineer within just 10
-            months. This accelerated advancement offered me the chance to
-            further refine my technical skills within a dynamic and fast-paced
-            setting.
+            Ascending from Junior to Intermediate Fullstack Developer at Neo
+            Financial My elevation to the role of Intermediate Fullstack
+            Developer marked a significant milestone in my career, showcasing my
+            swift professional development. Achieving this promotion from Junior
+            to Intermediate Engineer in merely 10 months, I embraced the
+            opportunity to enhance my technical abilities in a vibrant and
+            accelerated environment.
           </Typography>
         </S.Pharagraph>
 
