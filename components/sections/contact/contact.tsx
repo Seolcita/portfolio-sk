@@ -3,7 +3,6 @@ import { ReactElement } from 'react';
 import { ContactInfo } from './contact-info';
 import * as S from './contact.styles';
 import Typography from '../../atomic/Typography/Typography';
-import { Span } from 'sk-storybook';
 
 export const Contact = (): ReactElement => {
   return (

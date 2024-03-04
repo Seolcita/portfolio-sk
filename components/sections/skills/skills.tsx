@@ -3,6 +3,7 @@ import { ReactElement } from 'react';
 import * as S from './skills.styles';
 import { TurningBox } from '../../atomic/turning-box/turning-box';
 import Typography from '../../atomic/Typography/Typography';
+import { Box } from '@mui/material';
 
 const jsUrl = '/assets/stack-logos/js.svg';
 const tsUrl = '/assets/stack-logos/ts.svg';
@@ -16,6 +17,9 @@ const storybooklUrl = '/assets/stack-logos/storybook.png';
 const expressUrl = '/assets/stack-logos/express.svg';
 const nestUrl = '/assets/stack-logos/nest.svg';
 const mongodbUrl = '/assets/stack-logos/mongodb.svg';
+const reactNativeUrl = '/assets/stack-logos/reactNative.svg';
+const blenderUrl = '/assets/stack-logos/blender.svg';
+const threeUrl = '/assets/stack-logos/three.svg';
 
 export const MainSkills = (): ReactElement => {
   return (
@@ -24,7 +28,7 @@ export const MainSkills = (): ReactElement => {
         Skills
       </Typography>
 
-      <S.MainSkillsContainer>
+      <S.SkillsContainer>
         <TurningBox imageUrl={jsUrl} title='Javascript' />
         <TurningBox imageUrl={tsUrl} title='Typescript' />
         <TurningBox imageUrl={reactUrl} title='React' />
@@ -37,7 +41,19 @@ export const MainSkills = (): ReactElement => {
         <TurningBox imageUrl={expressUrl} title='Express' />
         <TurningBox imageUrl={nestUrl} title='Nest' />
         <TurningBox imageUrl={mongodbUrl} title='MongoDB' />
-      </S.MainSkillsContainer>
+      </S.SkillsContainer>
+
+      <Box marginTop={13} textAlign='center'>
+        <Typography variant='headingL' fontWeight='medium'>
+          In-Progress Skills
+        </Typography>
+      </Box>
+
+      <S.InProgressSkillsContainer>
+        <TurningBox imageUrl={reactNativeUrl} title='React Native' />
+        <TurningBox imageUrl={threeUrl} title='React Three Fiber' />
+        <TurningBox imageUrl={blenderUrl} title='Blender' />
+      </S.InProgressSkillsContainer>
     </S.Container>
   );
 };

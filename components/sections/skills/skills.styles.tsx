@@ -33,7 +33,7 @@ export const Container = styled(Center)`
   }
 `;
 
-export const MainSkillsContainer = styled.div`
+export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,4 +41,9 @@ export const MainSkillsContainer = styled.div`
   flex-wrap: wrap;
   margin-top: 6rem;
   gap: 4rem;
+`;
+
+export const InProgressSkillsContainer = styled(SkillsContainer)`
+  width: 100%;
+  padding-bottom: 3rem;
 `;
