@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
-import { ContactInfo } from './contact-info';
 import * as S from './contact.styles';
+import { ContactInfo } from './contact-info';
 import Typography from '../../atomic/Typography/Typography';
 
 export const Contact = (): ReactElement => {
