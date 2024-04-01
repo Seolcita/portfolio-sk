@@ -44,15 +44,14 @@ export const ContactInfo = (): ReactElement => {
             <StyledIcon icon={GitHubIcon} />
           </S.Anchor>
         </Tooltip>
-        {/* TODO: Once Study note is published, release it */}
-        {/* <Tooltip title='Study Note' TransitionComponent={Zoom} arrow>
+        <Tooltip title='Study Notes' TransitionComponent={Zoom} arrow>
           <S.Anchor
-            href='https://www.notion.so/7e4673784848475e905ec1e017288b84?v=4e672e3431d3465a910e3655e96adc0d'
+            href='https://quiver-salute-bc5.notion.site/5f5c26dabca14445b9aa2a4edcac0db3?v=d2be960cae7b4bdb9295c28e575ce351'
             target='_blank'
           >
             <StyledIcon icon={ArticleIcon} />
           </S.Anchor>
-        </Tooltip> */}
+        </Tooltip>
         <Tooltip title='Instagram' TransitionComponent={Zoom} arrow>
           <S.Anchor href='https://www.instagram.com/sseori30' target='_blank'>
             <StyledIcon icon={InstagramIcon} />
