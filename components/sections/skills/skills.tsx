@@ -18,8 +18,7 @@ const expressUrl = '/assets/stack-logos/express.svg';
 const nestUrl = '/assets/stack-logos/nest.svg';
 const mongodbUrl = '/assets/stack-logos/mongodb.svg';
 const reactNativeUrl = '/assets/stack-logos/reactNative.svg';
-const blenderUrl = '/assets/stack-logos/blender.svg';
-const threeUrl = '/assets/stack-logos/three.svg';
+const supabaseUrl = '/assets/stack-logos/supabase.svg';
 
 export const MainSkills = (): ReactElement => {
   return (
@@ -51,8 +50,7 @@ export const MainSkills = (): ReactElement => {
 
       <S.InProgressSkillsContainer>
         <TurningBox imageUrl={reactNativeUrl} title='React Native' />
-        <TurningBox imageUrl={threeUrl} title='React Three Fiber' />
-        <TurningBox imageUrl={blenderUrl} title='Blender' />
+        <TurningBox imageUrl={supabaseUrl} title='Supabase' />
       </S.InProgressSkillsContainer>
     </S.Container>
   );
