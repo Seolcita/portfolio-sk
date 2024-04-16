@@ -152,22 +152,6 @@ export const Experience = (): ReactElement => {
 
         <S.Pharagraph>
           <Typography variant='headingXS' fontWeight='bold'>
-            Rapid Advancement: From Junior to Intermediate Fullstack Developer
-            at Neo Financial
-          </Typography>
-          <Typography variant='textL'>
-            Ascending from Junior to Intermediate Fullstack Developer at Neo
-            Financial My elevation to the role of Intermediate Fullstack
-            Developer marked a significant milestone in my career, showcasing my
-            swift professional development. Achieving this promotion from Junior
-            to Intermediate Engineer in merely 10 months, I embraced the
-            opportunity to enhance my technical abilities in a vibrant and
-            accelerated environment.
-          </Typography>
-        </S.Pharagraph>
-
-        <S.Pharagraph>
-          <Typography variant='headingXS' fontWeight='bold'>
             Professional Development and Continuous Learning
           </Typography>
           <Typography variant='textL'>
