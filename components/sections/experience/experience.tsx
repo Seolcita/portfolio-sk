@@ -84,10 +84,10 @@ export const Experience = (): ReactElement => {
           </Typography>
           <Typography variant='textL'>
             In my previous position as an Intermediate Software Engineer at Neo
-            Financial, I was deeply involved in developing cutting-edge
-            financial technology solutions. This job was a significant milestone
-            in my career and provided me with the opportunity to apply and
-            enhance my skills in a dynamic, fast-paced environment.
+            Financial, I was deeply involved in developing advanced financial
+            technology solutions. This job was a significant milestone in my
+            career and provided me with the opportunity to apply and enhance my
+            skills in a dynamic, fast-paced environment.
           </Typography>
         </S.Pharagraph>
 

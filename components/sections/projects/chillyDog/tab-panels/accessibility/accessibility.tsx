@@ -14,7 +14,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
   return (
     <S.Container>
       {/* Main Page */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -22,16 +22,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
         >
           Main Page
         </Typography>
-        <S.IFrame
-          allow='fullscreen'
-          src='https://streamable.com/e/i3z8h0?loop=0'
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-        ></S.IFrame>
+        <S.Video src='/assets/videos/main.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Alert */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -39,15 +34,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
         >
           Alert
         </Typography>
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/7tm6rm?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/alert.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Create First Dog Profile */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -55,15 +46,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
         >
           Creating Dog Profile
         </Typography>
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/6sbtpr?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/createDogProfile.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Dog Profile */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -72,15 +59,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
           Dog Profile
         </Typography>
 
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/zam4cd?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/dogProfile.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* User Profile */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -89,15 +72,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
           User Profile
         </Typography>
 
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/6rys5l?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/userProfile.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Toast Message */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -106,15 +85,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
           Toast Message
         </Typography>
 
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/oep9bs?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/toast.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Location */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -123,15 +98,11 @@ export const AccessibilityChillyDog = (): ReactElement => {
           Location
         </Typography>
 
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/v0dkt4?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/location.mp4' controls></S.Video>
       </S.VideoContainer>
 
       {/* Logout */}
-      <S.VideoContainer>
+      <S.VideoContainer $isMobile={isMobile}>
         <Typography
           variant={isMobile ? 'headingXS' : 'headingS'}
           fontWeight='bold'
@@ -140,11 +111,7 @@ export const AccessibilityChillyDog = (): ReactElement => {
           Logout
         </Typography>
 
-        <S.IFrame
-          width={isMobile ? '360' : '560'}
-          height={isMobile ? '200' : '315'}
-          src='https://streamable.com/e/b5oczg?loop=0'
-        ></S.IFrame>
+        <S.Video src='/assets/videos/logout.mp4' controls></S.Video>
       </S.VideoContainer>
     </S.Container>
   );
