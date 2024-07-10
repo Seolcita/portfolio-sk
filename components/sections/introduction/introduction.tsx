@@ -68,7 +68,7 @@ export const Intorduction = (): ReactElement => {
           Seol Hi Kim
         </Typography>
         <Typography variant='headingXS'>
-          Frontend Developer ready to take over the world,
+          Fullstack Developer ready to take over the world,
           <br /> one line of code at the time!
         </Typography>
         <Typography variant='textL' margin={['lg', 'none', 'none', 'none']}>
